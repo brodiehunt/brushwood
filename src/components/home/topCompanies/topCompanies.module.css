@@ -1,0 +1,113 @@
+@keyframes bannerSlider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.relativeBox {
+  position: relative;
+  margin: 4rem auto;
+  max-width: 1800px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.topCompaniesSection {
+  padding: 2rem 0;
+  margin: 0 auto;
+  max-width: 1800px;
+}
+
+.relativeBox {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.topCompaniesSection:hover .infiniteScrollBanner {
+  animation-play-state: paused;
+}
+
+.infiniteScrollBanner {
+  display: inline-block;
+  animation: 8s bannerSlider infinite linear;
+  position: relative;
+}
+
+.topCompaniesSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  z-index: 2;
+}
+
+.topCompaniesSection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  z-index: 2;
+}
+
+.bannerImg {
+  height: 70px;
+  margin: 0 40px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .bannerImg {
+    height: 100px;
+    margin: 0 50px;
+  }
+
+  .topCompaniesSection::after,
+  .topCompaniesSection::before {
+    width: 100px;
+  }
+}
+
+@media (min-width: 1444px) {
+  .relativeBox {
+    margin: 9rem auto;
+  }
+
+  .title {
+    font-size: 4rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding: 0 1.5rem;
+    max-width: 1444px;
+  }
+
+  .infiniteScrollBanner {
+    animation: 11s bannerSlider infinite linear;
+  }
+
+  .bannerImg {
+    height: 150px;
+    margin: 0 70px;
+  }
+  .topCompaniesSection::after,
+  .topCompaniesSection::before {
+    width: 150px;
+  }
+}
