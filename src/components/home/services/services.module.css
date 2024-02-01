@@ -1,0 +1,89 @@
+.servicesSection {
+  margin: 4rem auto;
+  padding: 4rem 1rem;
+  position: relative;
+  overflow: hidden;
+  max-width: 1444px;
+}
+
+.servicesTitle {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circle1 {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, var(--blue-50), var(--blue-200));
+}
+
+.circle2 {
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 0;
+
+  background: radial-gradient(circle, var(--blue-50), var(--blue-100));
+}
+
+.circle3 {
+  bottom: 0px;
+  right: 30%;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, var(--blue-50), var(--blue-100));
+}
+
+.circle4 {
+  top: 0px;
+  right: -50px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--blue-50), var(--blue-100));
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .servicesSection {
+    padding: 5rem 1.5rem;
+  }
+
+  .servicesTitle {
+    font-size: 3rem;
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .circle1 {
+    bottom: 20%;
+  }
+
+  .circle2 {
+    top: 30%;
+    left: 300px;
+  }
+
+  .servicesTitle {
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 1550px) {
+  .servicesSection {
+    overflow: unset;
+  }
+}

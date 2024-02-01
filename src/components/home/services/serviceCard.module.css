@@ -1,0 +1,66 @@
+.serviceCard {
+  background: rgb(250, 250, 250, 0.2);
+  border-radius: var(--border-radius-sml);
+  padding: 2rem;
+  /* margin: 1rem; */
+  backdrop-filter: blur(1rem);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s ease all;
+}
+
+.serviceCard:hover {
+  box-shadow: var(--shadow-lrg);
+}
+
+.cardIcon {
+  margin-bottom: 1.5rem;
+  align-self: start;
+}
+
+.serviceTitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.serviceDescription {
+  font-size: 0.875rem;
+  opacity: 0.6;
+  margin-bottom: 1.5rem;
+}
+
+.cardLink {
+  margin-top: auto;
+  text-decoration: none;
+  align-self: start;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.learnMoreIcon {
+  padding-bottom: 0.1rem;
+}
+
+.cardLink::after {
+  content: "";
+  background-color: var(--blue-700);
+  position: absolute;
+  top: 105%;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: var(--border-radius-sml);
+  transition: 0.2s ease all;
+}
+
+.cardLink:hover.cardLink::after {
+  width: 100%;
+  transform: scaleX(1);
+}

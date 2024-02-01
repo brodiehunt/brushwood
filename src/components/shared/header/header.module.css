@@ -4,6 +4,7 @@
   grid-template-columns: repeat(3, 1fr);
   border-bottom: 1px solid var(--neutral-200);
   position: relative;
+  z-index: 5;
 }
 
 .hamburgerButton {
