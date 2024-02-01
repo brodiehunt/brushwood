@@ -126,6 +126,10 @@ body {
   --border-radius-sml: 0.2rem;
   --error-red-600: #dc2626;
   --error-red-200: #fecaca;
+  color: var(--text-dark);
+  min-height: 100svh;
+
+  /* background-color: #0a0a0a; */
 }
 
 ol,

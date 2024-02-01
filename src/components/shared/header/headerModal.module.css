@@ -1,0 +1,125 @@
+.modalContainer {
+  width: 100%;
+  height: calc(100svh - 100%);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.modalContent {
+  height: 100%;
+  background-color: var(--neutral-50);
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  max-width: 300px;
+  padding: 2rem;
+  position: relative;
+}
+
+.navItem {
+  padding: 0.5rem 0;
+  width: 200px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--text-dark);
+  padding: 0.5rem;
+  width: 100%;
+  display: block;
+  border-radius: var(--border-radius-sml);
+  font-size: 1.25rem;
+  /* color: var(--blue-700); */
+}
+
+.navLink:hover,
+.navLink:focus {
+  background-color: var(--blue-100);
+  outline: none;
+}
+
+.navDropdownButton {
+  all: unset;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  position: relative;
+  font-size: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navDropdownButton:hover,
+.navDropdownButton:focus {
+  background-color: var(--blue-100);
+  border-radius: var(--border-radius-sml);
+}
+
+.arrow {
+  transition: 0.2s ease all;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+  transition: 0.2s ease all;
+}
+
+.navDropdownLinks {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  transform-origin: top;
+  transition: 1s ease all;
+}
+
+.subLinkContainer {
+  padding-left: 0.75rem;
+  width: 100%;
+}
+
+.subLink {
+  text-decoration: none;
+  color: var(--text-dark);
+  padding: 0.4rem;
+  width: 100%;
+  display: block;
+  border-radius: var(--border-radius-sml);
+  font-size: 1rem;
+}
+
+.subLink:focus {
+  background-color: var(--blue-100);
+  border-radius: var(--border-radius-sml);
+  outline: none;
+}
+
+.buttonContainer {
+  margin-top: auto;
+}
+
+.dropdownButton {
+  width: 100%;
+  border: none;
+  border-radius: var(--border-radius-sml);
+  background-color: var(--blue-700);
+  color: var(--text-light);
+  padding: 0.7rem;
+  font-size: 1.125rem;
+  transition: 0.2s ease all;
+}
+
+.dropdownButton:focus,
+.dropdownButton:hover {
+  background-color: var(--blue-500);
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .modalContainer {
+    display: none;
+  }
+}

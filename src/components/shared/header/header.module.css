@@ -1,0 +1,64 @@
+.header {
+  padding: 1.25rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid var(--neutral-200);
+  position: relative;
+}
+
+.hamburgerButton {
+  background: none;
+  border: none;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-self: start;
+}
+
+.hamburgerIcon {
+  color: var(--blue-700);
+  height: 30px;
+  width: 30px;
+}
+
+.headerLogoLink {
+  justify-self: center;
+  align-self: center;
+}
+
+.headerLogo {
+  display: block;
+}
+
+.headerPhoneButton {
+  justify-self: right;
+  color: var(--blue-700);
+  background: none;
+  padding: 0.2rem;
+  border: none;
+  align-self: center;
+  display: flex;
+  align-items: center;
+}
+
+/* Items hidden in mobile view */
+
+@media (min-width: 768px) {
+  /* Items hidden in larger views */
+  .hamburgerButton {
+    display: none;
+  }
+
+  .headerPhoneButton {
+    display: none;
+  }
+
+  /* End Items Hidden */
+
+  .header {
+    padding: 2rem 1.5rem;
+  }
+  .headerLogoLink {
+    justify-self: left;
+  }
+}
