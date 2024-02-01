@@ -1,0 +1,49 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  text-align: center;
+  color: var(--text-dark);
+  line-height: 1.625rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.contactIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.contactIcon {
+  color: var(--blue-700);
+  padding-bottom: 0.2rem;
+}
+@media (min-width: 768px) {
+  .contactContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    text-align: start;
+    gap: 6rem;
+  }
+
+  .column1,
+  .column2 {
+    flex-grow: 1;
+  }
+
+  .contactIconContainer {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 900px) {
+  .contactContainer {
+    gap: 8rem;
+  }
+}

@@ -1,7 +1,7 @@
 import styles from "./App.module.css";
 import { Outlet } from "react-router-dom";
 import Header from "./components/shared/header/Header";
-
+import Footer from "./components/shared/footer/footer";
 function Root() {
   return (
     <>
@@ -9,6 +9,7 @@ function Root() {
       <main>
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 }

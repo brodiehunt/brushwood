@@ -1,0 +1,32 @@
+.socialsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.socialLink {
+  transition: 0.2s ease-in all;
+}
+
+.social-link:hover {
+  transform: scale(1.15);
+}
+
+.social-link:focus {
+  outline: none;
+  border-bottom: 3px solid var(--blue-700);
+}
+
+.socialIcon {
+  height: 20px;
+  width: 20px;
+  color: var(--blue-700);
+}
+
+@media (min-width: 768px) {
+  .socialsContainer {
+    flex-grow: 1;
+    justify-content: end;
+  }
+}
