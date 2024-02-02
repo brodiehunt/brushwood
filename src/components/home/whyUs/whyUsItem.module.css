@@ -1,0 +1,189 @@
+.itemContainer {
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  position: relative;
+  gap: 3rem;
+}
+
+.itemContent {
+  padding: 1rem;
+  border: var(--border-radius-sml);
+}
+.itemTitle {
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.itemDescription {
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkIcon {
+  color: var(--blue-500);
+  width: 25px;
+  height: 25px;
+}
+
+.itemParalaxScroll {
+  position: relative;
+  overflow: hidden;
+}
+
+.color1 {
+  height: 100%;
+  position: absolute;
+  border-radius: var(--border-radius-sml);
+}
+
+.color2 {
+  height: 100%;
+  position: absolute;
+  border-radius: var(--border-radius-sml);
+}
+
+.imageContent {
+  height: 100%;
+  width: 60%;
+  position: absolute;
+  background-color: var(--neutral-50);
+  border-radius: var(--border-radius-sml);
+  z-index: 2;
+  top: 80%;
+}
+/* Change Location of color for each child */
+
+/* Child 1 */
+.itemContainer:nth-child(1) .color1 {
+  width: 40%;
+  bottom: 100%;
+  background-color: var(--blue-300);
+}
+
+.itemContainer:nth-child(1) .color2 {
+  width: 40%;
+  bottom: 90%;
+  left: 30%;
+  background-color: var(--blue-100);
+}
+
+.itemContainer:nth-child(1) .imageContent {
+  left: 5%;
+}
+
+/* Child 2 */
+.itemContainer:nth-child(2) .color1 {
+  width: 40%;
+  bottom: 100%;
+  background-color: var(--blue-300);
+}
+
+.itemContainer:nth-child(2) .color2 {
+  width: 40%;
+  bottom: 90%;
+  right: 5%;
+  background-color: var(--blue-100);
+}
+
+.itemContainer:nth-child(2) .imageContent {
+  left: 15%;
+}
+
+/* Child 3 */
+
+.itemContainer:nth-child(3) .color1 {
+  width: 40%;
+  bottom: 100%;
+  left: 20%;
+  background-color: var(--blue-50);
+}
+
+.itemContainer:nth-child(3) .color2 {
+  width: 40%;
+  bottom: 90%;
+  right: 20%;
+  background-color: var(--blue-300);
+}
+
+.itemContainer:nth-child(3) .imageContent {
+  right: 15%;
+}
+
+/* Child 4 */
+
+.itemContainer:nth-child(4) .color1 {
+  width: 45%;
+  bottom: 100%;
+  left: 15%;
+  background-color: var(--blue-50);
+}
+
+.itemContainer:nth-child(4) .color2 {
+  width: 40%;
+  bottom: 90%;
+  right: 15%;
+  background-color: var(--blue-300);
+}
+
+.itemContainer:nth-child(4) .imageContent {
+  right: 20%;
+}
+
+@media (min-width: 768px) {
+  .itemContainer {
+    grid-template-rows: unset;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 7rem;
+    min-height: 350px;
+  }
+
+  .itemContent {
+    align-self: center;
+  }
+
+  .itemTitle {
+    margin-bottom: 1.5rem;
+  }
+
+  .itemDescription {
+    margin-bottom: 1rem;
+  }
+
+  /* Swap content on even container */
+
+  .itemContainer:nth-child(even) .itemContent {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .itemContainer:nth-child(even) .itemParalaxScroll {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .itemContainer {
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .itemTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1444px) {
+  .itemContainer {
+  }
+
+  .itemTitle {
+    font-size: 2rem;
+  }
+}

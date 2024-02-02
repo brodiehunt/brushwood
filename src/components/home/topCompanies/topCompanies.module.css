@@ -11,6 +11,7 @@
   position: relative;
   margin: 4rem auto;
   max-width: 1800px;
+  padding: 2rem 0;
 }
 
 .title {
@@ -69,6 +70,10 @@
 }
 
 @media (min-width: 768px) {
+  .relativeBox {
+    padding: 4rem 0;
+  }
+
   .title {
     font-size: 3rem;
   }
@@ -87,6 +92,7 @@
 @media (min-width: 1444px) {
   .relativeBox {
     margin: 9rem auto;
+    padding: 4rem 0;
   }
 
   .title {

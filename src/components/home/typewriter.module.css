@@ -1,0 +1,45 @@
+.whiteText,
+.blueText {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--text-light);
+}
+
+.whiteText:first-child {
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.blueText {
+  color: var(--blue-700);
+  font-weight: 700;
+}
+
+.blueText div span:last-child {
+  color: var(--text-light) !important;
+}
+
+@media (min-width: 550px) {
+  .whiteText,
+  .blueText {
+    font-size: 2rem;
+  }
+  .whiteText:first-child {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .whiteText,
+  .blueText {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .whiteText,
+  .blueText {
+    font-size: 4rem;
+  }
+}

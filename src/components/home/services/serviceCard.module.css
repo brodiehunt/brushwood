@@ -64,3 +64,12 @@
   width: 100%;
   transform: scaleX(1);
 }
+
+@media (min-width: 1024px) {
+  .serviceTitle {
+    font-size: 1.5rem;
+  }
+  .serviceDescription {
+    font-size: 1.25rem;
+  }
+}
