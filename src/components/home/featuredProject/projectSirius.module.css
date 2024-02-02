@@ -1,0 +1,135 @@
+.siriusSection {
+  padding: 0 1rem;
+  max-width: 1444px;
+  margin: 0 auto;
+  margin-bottom: var(--section-mg-bottom);
+}
+
+.contentContainer {
+  margin-bottom: 2rem;
+}
+.topHeader {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
+  width: fit-content;
+  border-bottom: 1px solid var(--neutral-200);
+  display: flex;
+  gap: 1rem;
+}
+
+.topHeaderItem {
+  opacity: 0.6;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+}
+
+.siriusTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.textBlue {
+  color: var(--blue-700);
+}
+
+.siriusDescription {
+  opacity: 0.6;
+  margin-bottom: 1rem;
+}
+
+.bottomBar {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.infoLabel {
+  opacity: 1;
+  font-weight: 500;
+}
+
+.siriusImg {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  /* .siriusSection {
+    position: relative;
+    margin-bottom: var(--section-mg-bottom);
+    height: 600px;
+  }
+
+  .contentContainer {
+    position: absolute;
+    padding-left: 15%;
+    left: 32%;
+    right: 1.5rem;
+    top: 0;
+    background-color: var(--blue-100);
+    padding: 3rem 2rem 2rem 15%;
+    border-radius: 0 0 5rem 0;
+  }
+
+  .imgContainer {
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    width: 40%;
+    aspect-ratio: 1 /1;
+    border-radius: 0 5rem 0 0;
+    overflow: hidden;
+  }
+
+  .siriusImg {
+    height: 100%;
+    object-fit: cover;
+  } */
+
+  .siriusSection {
+    padding: 0 1.5rem;
+    margin-bottom: var(--section-mg-bottom);
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .contentContainer {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    padding: 3rem 2rem;
+    padding-left: 25%;
+    background-color: var(--blue-100);
+    border-radius: 0 0 7rem 0;
+    width: 120%;
+    position: relative;
+    right: 20%;
+  }
+
+  .imgContainer {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .siriusImg {
+    margin-top: 3rem;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    border-radius: 0 7rem 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .siriusSection {
+  }
+
+  .contentContainer {
+    padding: 5rem 5rem 5rem 25%;
+  }
+
+  .siriusTitle {
+    font-size: 3rem;
+  }
+}

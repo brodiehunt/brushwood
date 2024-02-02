@@ -1,0 +1,52 @@
+.hollow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--blue-700);
+  position: relative;
+  width: fit-content;
+}
+
+.hollow svg {
+  padding-bottom: 0.2rem;
+}
+
+.hollow::after {
+  content: "";
+  background-color: var(--blue-700);
+  position: absolute;
+  top: 105%;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: var(--border-radius-sml);
+  transition: 0.2s ease all;
+}
+
+.hollow:hover.hollow::after {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+.full {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--text-light);
+  padding: 0.5rem 0.95rem;
+  padding-top: 0.7rem;
+  border-radius: var(--border-radius-lrg);
+  background-color: var(--blue-700);
+  width: fit-content;
+  transition: 0.2s ease all;
+}
+
+.full:hover {
+  background-color: var(--blue-500);
+}
