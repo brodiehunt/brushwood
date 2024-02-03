@@ -1,0 +1,70 @@
+.testimonialCard {
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  padding: 1rem;
+  background-color: var(--neutral-50);
+  box-shadow: var(--shadow-lrg);
+}
+
+.testimonialComment {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  opacity: 0.6;
+}
+
+.testimonialInformation {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.by {
+  font-weight: 500;
+}
+
+.role {
+  font-size: 0.875rem;
+}
+.personalInfo {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.companyIcon {
+  height: 40px;
+}
+
+.ratingContainer {
+  align-self: center;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.starIcon {
+  color: var(--blue-600);
+}
+
+@media (min-width: 768px) {
+  .testimonialCard {
+    min-width: 600px;
+    padding: 2rem;
+  }
+
+  .testimonialInformation {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .personalInfo {
+    margin-bottom: 0;
+  }
+
+  .testimonialComment {
+    font-size: 1rem;
+  }
+}

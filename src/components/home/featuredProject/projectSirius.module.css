@@ -56,38 +56,6 @@
 }
 
 @media (min-width: 768px) {
-  /* .siriusSection {
-    position: relative;
-    margin-bottom: var(--section-mg-bottom);
-    height: 600px;
-  }
-
-  .contentContainer {
-    position: absolute;
-    padding-left: 15%;
-    left: 32%;
-    right: 1.5rem;
-    top: 0;
-    background-color: var(--blue-100);
-    padding: 3rem 2rem 2rem 15%;
-    border-radius: 0 0 5rem 0;
-  }
-
-  .imgContainer {
-    position: absolute;
-    top: 0;
-    left: 1.5rem;
-    width: 40%;
-    aspect-ratio: 1 /1;
-    border-radius: 0 5rem 0 0;
-    overflow: hidden;
-  }
-
-  .siriusImg {
-    height: 100%;
-    object-fit: cover;
-  } */
-
   .siriusSection {
     padding: 0 1.5rem;
     margin-bottom: var(--section-mg-bottom);
@@ -113,7 +81,7 @@
   }
 
   .siriusImg {
-    margin-top: 3rem;
+    padding-top: 3rem;
     height: 100%;
     object-fit: cover;
     position: relative;

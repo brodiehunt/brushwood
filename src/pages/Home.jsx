@@ -5,6 +5,7 @@ import Typewriter from "../components/home/Typewriter";
 import bannerImg from "../assets/shared/banner1.webp";
 import WhyUs from "../components/home/whyUs/whyUsSection";
 import ProjectSirius from "../components/home/featuredProject/ProjectSirus";
+import TestimonialSlider from "../components/home/testimonialSlider/testimonialSlider";
 const Home = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const Home = () => {
       </Banner>
       <WhyUs />
       <ProjectSirius />
+      <TestimonialSlider />
     </div>
   );
 };
