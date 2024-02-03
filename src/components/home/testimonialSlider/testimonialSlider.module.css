@@ -98,3 +98,9 @@
     font-size: 4rem;
   }
 }
+
+@media (min-height: 800px) {
+  .testimonialSection {
+    margin-bottom: 0rem;
+  }
+}

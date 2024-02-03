@@ -41,7 +41,7 @@
   color: var(--text-light);
   padding: 0.5rem 0.95rem;
   padding-top: 0.7rem;
-  border-radius: var(--border-radius-lrg);
+  border-radius: var(--border-radius-xl);
   background-color: var(--blue-700);
   width: fit-content;
   transition: 0.2s ease all;

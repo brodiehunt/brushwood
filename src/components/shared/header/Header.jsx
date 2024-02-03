@@ -10,6 +10,7 @@ import { useLocation, Link } from "react-router-dom";
 import { MdExpandMore } from "react-icons/md";
 import { motion } from "framer-motion";
 import { subContainerVariants, linkVariants } from "../../../util/animate";
+import ButtonLink from "../buttonLink/ButtonLink";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -102,9 +103,15 @@ const Header = () => {
           )}
         </button>
       </nav>
-      <Link to="/contact" className={styles.contactButton}>
+      {/* <Link to="/contact" className={styles.contactButton}>
         Contact
-      </Link>
+      </Link> */}
+      <div className={styles.contactButton}>
+        <ButtonLink href="/contact" type="internal" theme="full">
+          Contact
+        </ButtonLink>
+      </div>
+
       {/* Large screen nav ends here */}
       <a
         className={styles.headerPhoneButton}

@@ -1,0 +1,34 @@
+.container {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.statement {
+  margin: 2rem auto;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin: 0;
+    align-items: start;
+  }
+
+  .statement {
+    margin: 2rem 0;
+  }
+}

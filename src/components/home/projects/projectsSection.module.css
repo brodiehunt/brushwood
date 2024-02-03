@@ -29,17 +29,13 @@
 .projectsContainer {
   display: flex;
   align-items: stretch;
-  /* gap: 4rem; */
   margin: 1rem 0;
-}
-
-.buttonContainer {
-  /* margin-top: 1rem; */
 }
 
 @media (min-width: 768px) {
   .projectsSection {
     padding: 0 1.5rem;
+    /* margin-bottom: 0; */
   }
 
   .projectsSectionTitle {
@@ -59,5 +55,11 @@
   .projectsSectionTitle {
     font-size: 4rem;
     margin-bottom: 1rem;
+  }
+}
+
+@media (min-height: 800px) {
+  .testimonialSection {
+    margin-bottom: 0rem;
   }
 }

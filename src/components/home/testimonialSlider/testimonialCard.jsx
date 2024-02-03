@@ -2,7 +2,7 @@ import styles from "./testimonialCard.module.css";
 import starIcon from "../../../assets/home/testimonials/star.svg";
 import { motion } from "framer-motion";
 import { useLayoutEffect, useRef, useEffect } from "react";
-import { IoIosStarOutline } from "react-icons/io";
+import { IoMdStar } from "react-icons/io";
 
 const TestimonialCard = ({ testimonial, animationVars, isRight }) => {
   const ref = useRef(null);
@@ -36,11 +36,11 @@ const TestimonialCard = ({ testimonial, animationVars, isRight }) => {
           </div>
         </div>
         <div className={styles.ratingContainer}>
-          <IoIosStarOutline className={styles.starIcon} />
-          <IoIosStarOutline className={styles.starIcon} />
-          <IoIosStarOutline className={styles.starIcon} />
-          <IoIosStarOutline className={styles.starIcon} />
-          <IoIosStarOutline className={styles.starIcon} />
+          <IoMdStar className={styles.starIcon} />
+          <IoMdStar className={styles.starIcon} />
+          <IoMdStar className={styles.starIcon} />
+          <IoMdStar className={styles.starIcon} />
+          <IoMdStar className={styles.starIcon} />
         </div>
       </div>
     </motion.article>
