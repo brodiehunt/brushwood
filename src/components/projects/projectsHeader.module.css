@@ -1,0 +1,51 @@
+.projectsHeader {
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 1444px;
+}
+
+.projectsTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.blueText {
+  color: var(--blue-700);
+}
+.projectsStatement {
+  opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .projectsHeader {
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+  }
+
+  .projectsTitle {
+    font-size: 3rem;
+  }
+
+  .projectsStatement {
+    font-size: 1.25rem;
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projectsHeader {
+    margin: 4rem auto;
+  }
+
+  .projectsTitle {
+    font-size: 4rem;
+  }
+
+  .projectsStatement {
+    font-size: 1.5rem;
+    max-width: 700px;
+  }
+}
+@media (min-width: 1444px) {
+}

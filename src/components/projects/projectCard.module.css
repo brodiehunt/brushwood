@@ -1,0 +1,83 @@
+.projectCard {
+  border-radius: var(--border-radius-sml);
+  box-shadow: var(--shadow-mid);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s ease all;
+}
+
+.projectCard:hover {
+  box-shadow: var(--shadow-lrg);
+  transform: scale(1.02);
+}
+
+.imgContainer {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.projectImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logoContainer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  padding: 0.5rem;
+  background-color: var(--text-light);
+}
+
+.logoImg {
+  height: 100%;
+}
+
+.cardContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 1rem 0.5rem;
+  background-color: var(--neutral-50);
+  flex-grow: 1;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.cardDescription {
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.projectFeatures {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.projectFeature {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0.5rem;
+  padding-top: 0.6rem;
+  background-color: var(--blue-100);
+  border-radius: var(--border-radius-sml);
+}
+
+@media (min-width: 768px) {
+  .cardContentContainer {
+    padding: 2rem 1rem;
+  }
+}
