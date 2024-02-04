@@ -1,5 +1,5 @@
 import styles from "./stillHaveQuestions.module.css";
-import ButtonLink from "../../shared/buttonLink/ButtonLink";
+import ButtonLink from "../buttonLink/ButtonLink";
 const StillHaveQuestions = ({}) => {
   return (
     <div className={styles.container}>

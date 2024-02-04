@@ -7,7 +7,7 @@ import WhyUs from "../components/home/whyUs/whyUsSection";
 import ProjectSirius from "../components/home/featuredProject/ProjectSirus";
 import TestimonialSlider from "../components/home/testimonialSlider/testimonialSlider";
 import ProjectsSection from "../components/home/projects/ProjectsSection";
-import FaqSection from "../components/home/faq/FaqSection";
+import FaqSection from "../components/shared/faq/FaqSection";
 
 import { homepageAccordionData } from "../components/data/accordionData.jsx";
 
