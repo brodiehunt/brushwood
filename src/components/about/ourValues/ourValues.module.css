@@ -1,0 +1,177 @@
+.valuesSection {
+  /* padding: 4rem 0; */
+  margin: 0 auto;
+  margin-bottom: var(--section-mg-bottom);
+  max-width: 1444px;
+  /* background-color: var(--blue-50); */
+  position: relative;
+}
+
+.valuesHeader {
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+}
+
+.valuesTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--blue-700);
+}
+
+.valuesDescription {
+  /* opacity: 0.6; */
+  text-align: center;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.valuesCardsContainer {
+  padding: 0 1rem;
+}
+
+/* Rotating divs */
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.decorativeAnimation {
+  position: absolute;
+  width: 100%;
+  padding: 0.5rem;
+  top: 0;
+  transform: translateY(-30%);
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  /* transform: translateY(-50%); */
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  top: 0;
+  overflow: hidden;
+}
+
+.outerCircle {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--blue-200);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: rotation 7s linear infinite;
+}
+
+.outerCircle::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--blue-400);
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.innerCircle1 {
+  width: 80%;
+  height: 80%;
+  border: 2px solid var(--blue-400);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.innerCircle1::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--blue-300);
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.innerCircle2 {
+  width: 80%;
+  height: 80%;
+  border: 2px solid var(--blue-100);
+  border-radius: 50%;
+  position: relative;
+}
+
+.innerCircle2::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--blue-200);
+  /* left: 0; */
+  bottom: 0;
+  right: 50%;
+
+  transform: translateY(50%);
+}
+
+@media (min-width: 768px) {
+  .valuesTitle {
+    font-size: 3rem;
+  }
+  .valuesCardsContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .valuesHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .decorativeAnimation {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .valuesCardsContainer {
+    grid-gap: 6rem;
+    aspect-ratio: 1/1;
+  }
+
+  .outerCircle::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .innerCircle1::before {
+    width: 50px;
+    height: 50px;
+  }
+
+  .innerCircle2::before {
+    width: 30px;
+    height: 30px;
+  }
+}

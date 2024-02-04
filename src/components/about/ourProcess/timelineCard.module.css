@@ -1,0 +1,94 @@
+.timelineCardContainer {
+  margin: 0 auto;
+  padding: 3rem 0;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-left: 3px solid var(--blue-700);
+  position: relative;
+}
+
+.iconContainer {
+  background-color: white;
+  border: 2px solid var(--blue-700);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.motionIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.timelineCard {
+  padding: 2rem 1rem;
+  min-width: 300px;
+  max-width: 400px;
+  margin-left: 2rem;
+  background-color: var(--neutral-50);
+  border-radius: var(--border-radius-mid);
+  box-shadow: var(--shadow);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .timelineCardContainer {
+    width: 50%;
+    margin: 0;
+  }
+
+  .timelineCardContainer:nth-child(odd) {
+    justify-self: end;
+  }
+
+  .timelineCardContainer:nth-child(even) {
+    justify-self: start;
+    border-left: none;
+    border-right: 3px solid var(--blue-700);
+    margin-left: 3px;
+  }
+
+  .timelineCardContainer:nth-child(even) .iconContainer {
+    left: unset;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+  .timelineCardContainer:nth-child(even) .timelineCard {
+    margin-left: auto;
+    margin-right: 3rem;
+  }
+  .iconContainer {
+    width: 60px;
+    height: 60px;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .timelineCard {
+    padding: 3rem 3rem;
+    margin-left: 3rem;
+  }
+}

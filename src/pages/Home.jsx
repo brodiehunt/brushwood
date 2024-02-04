@@ -10,13 +10,14 @@ import ProjectsSection from "../components/home/projects/ProjectsSection";
 import FaqSection from "../components/shared/faq/FaqSection";
 
 import { homepageAccordionData } from "../components/data/accordionData.jsx";
+import { homeSlider } from "../components/data/logoBannerSlider.js";
 
 const Home = () => {
   return (
     <div>
       Hello Home
       <Services />
-      <TopCompanies />
+      <TopCompanies sliderData={homeSlider} title="Trusted by Top Companies" />
       <Banner bannerImg={bannerImg}>
         <Typewriter />
       </Banner>

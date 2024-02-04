@@ -1,0 +1,68 @@
+.valueCard {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 2rem auto;
+  border-radius: var(--border-radius-lrg);
+  box-shadow: var(--shadow-lrg);
+  background-color: white;
+  background: rgb(250, 250, 250, 0.1);
+  backdrop-filter: blur(1rem);
+}
+
+.cardIcon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 3rem;
+}
+
+.valueCardTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.valueCardDescription {
+  opacity: 0.6;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .valueCard {
+    margin: 0;
+  }
+
+  .valueCardTitle {
+    font-size: 2rem;
+  }
+
+  .valueCard:nth-child(1) {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .valueCard:nth-child(2) {
+    align-self: start;
+    justify-self: left;
+  }
+  .valueCard:nth-child(3) {
+    align-self: start;
+  }
+  .valueCard:nth-child(4) {
+    align-self: center;
+    justify-self: start;
+  }
+}
+
+@media (min-width: 1444px) {
+  .valueCard:nth-child(2) {
+    margin-top: 2rem;
+  }
+  .valueCard:nth-child(4) {
+    align-self: start;
+    justify-self: center;
+  }
+}
