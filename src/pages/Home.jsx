@@ -1,5 +1,5 @@
 import Services from "../components/home/services/services";
-import TopCompanies from "../components/home/topCompanies/topCompanies";
+import TopCompanies from "../components/home/topCompanies/TopCompanies";
 import Banner from "../components/shared/banner/Banner";
 import Typewriter from "../components/home/Typewriter";
 import bannerImg from "../assets/shared/banner1.webp";
