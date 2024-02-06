@@ -53,8 +53,14 @@
   position: absolute;
   background-color: var(--neutral-50);
   border-radius: var(--border-radius-sml);
+  display: flex;
+  align-items: center;
   z-index: 2;
   top: 80%;
+}
+
+.itemImg {
+  max-width: 100%;
 }
 /* Change Location of color for each child */
 

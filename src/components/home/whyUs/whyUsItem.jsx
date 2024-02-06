@@ -51,7 +51,7 @@ const WhyUsItem = ({ item, index }) => {
           style={{ y: bottomContainer }}
           className={styles.imageContent}
         >
-          <img src={item.icon} alt={item.alt} />
+          <img className={styles.itemImg} src={item.icon} alt={item.alt} />
         </motion.div>
       </div>
     </div>

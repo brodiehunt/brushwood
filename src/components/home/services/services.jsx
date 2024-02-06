@@ -3,6 +3,7 @@ import structuralIcon from "../../../assets/home/servicesIcons/serviceIcon.svg";
 import temporaryIcon from "../../../assets/home/servicesIcons/serviceIcon2.svg";
 import facadeIcon from "../../../assets/home/servicesIcons/facade_icon.svg";
 import roadIcon from "../../../assets/home/servicesIcons/road_icon.svg";
+
 import ServiceCard from "./serviceCard";
 const services = [
   {
@@ -34,6 +35,7 @@ const services = [
     href: "/services/civil",
   },
 ];
+
 const Services = () => {
   return (
     <section className={styles.servicesSection}>
