@@ -1,5 +1,5 @@
 .pageHeader {
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   max-width: 1444px;
   margin: 0 auto;
@@ -57,7 +57,7 @@
     margin-left: 6rem;
     margin-right: 0;
     top: unset;
-    bottom: -1px;
+    bottom: -2px;
     padding: 5rem 4rem 0 4rem;
   }
 
