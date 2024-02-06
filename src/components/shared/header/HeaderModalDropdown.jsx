@@ -110,7 +110,9 @@ const HeaderModalDropdown = ({ setMenuOpen }) => {
           animate="animate"
           exit="exit"
         >
-          <button className={styles.dropdownButton}>Contact</button>
+          <Link to="/contact" className={styles.dropdownButton}>
+            Contact
+          </Link>
         </motion.div>
       </motion.div>
     </motion.div>

@@ -20,9 +20,15 @@ const Header = () => {
   useEffect(() => {
     setMenuOpen(false);
     setSubMenuOpen(false);
+    document.body.style.overflow = "unset";
   }, [location.pathname]);
 
   const toggleMenuOpen = () => {
+    if (menuOpen) {
+      document.body.style.overflow = "unset";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
     setMenuOpen(!menuOpen);
   };
 
