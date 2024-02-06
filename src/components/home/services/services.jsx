@@ -11,7 +11,7 @@ const services = [
     title: "Structural Engineering Services",
     description:
       "Designing and analysing structures for peak safety and durability, integrating advanced engineering with material sciences",
-    href: "/services/structural",
+    href: "/services/structural-engineering",
   },
   {
     icon: temporaryIcon,
@@ -25,14 +25,14 @@ const services = [
     title: "Façade Engineering and Design",
     description:
       "Blending aesthetics and functionality in facade engineering for energy-efficient, harmonious, and sustainable designs",
-    href: "/services/facade",
+    href: "/services/facade-engineering",
   },
   {
     icon: roadIcon,
     title: "Civil Engineering Services",
     description:
       "Comprehensive civil engineering for infrastructure projects, emphasizing sustainable practices and resource efficiency",
-    href: "/services/civil",
+    href: "/services/civil-engineering",
   },
 ];
 

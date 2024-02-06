@@ -34,8 +34,16 @@
 
 @media (min-width: 1444px) {
   .bannerSection {
-    max-width: calc(1444px - 3rem);
-    margin: 10rem auto;
+    /* max-width: calc(1444px - 3rem); */
+    max-width: 1444px;
+
     margin-bottom: var(--section-mg-bottom);
+  }
+}
+
+@media (min-width: 1500px) {
+  .bannerSection {
+    /* max-width: 1444px; */
+    margin: 10rem auto;
   }
 }

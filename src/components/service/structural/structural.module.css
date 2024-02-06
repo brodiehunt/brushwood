@@ -1,0 +1,157 @@
+.pageContainer {
+  padding: 0 1rem;
+  margin: 0 auto;
+  margin-bottom: var(--section-mg-bottom);
+  max-width: 1444px;
+}
+
+.pageHeader {
+  margin: 2rem 0;
+}
+
+.pageTitle {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.headerSpan {
+  color: var(--blue-700);
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.description {
+  opacity: 0.6;
+  margin-bottom: 1.5rem;
+  line-height: 130%;
+}
+
+.introImgContainer {
+  margin-bottom: 3rem;
+  max-height: 350px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+.introImg {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--blue-700);
+}
+
+.listContainer {
+  margin-bottom: 3rem;
+  line-height: 130%;
+}
+.listItem {
+  margin-bottom: 1rem;
+}
+
+.bulletPoint {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.bulletDescription {
+  opacity: 0.6;
+}
+
+.secondaryImgContainer {
+  margin-bottom: 3rem;
+  /* max-height: 350px; */
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.secondaryImg {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.secondaryImg2 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .pageContainer {
+    padding: var(--section-pd);
+  }
+
+  .pageTitle {
+    font-size: 3rem;
+  }
+
+  .headerSpan {
+    font-size: 2rem;
+  }
+
+  .description {
+    margin-bottom: 4rem;
+  }
+
+  .introImgContainer {
+    float: right;
+    max-width: 50%;
+    margin-bottom: 4rem;
+    margin-left: 1.5rem;
+  }
+
+  .gridImgContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .secondaryImg2 {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pageHeader {
+    margin: 4rem 0 3rem 0;
+  }
+
+  .pageTitle {
+    font-size: 4rem;
+  }
+
+  .headerSpan {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  .introImgContainer {
+    margin-bottom: 3rem;
+    max-height: 450px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+  }
+  .introImg {
+    max-height: 100%;
+  }
+
+  .listContainer {
+    margin-bottom: 5rem;
+  }
+
+  .gridImgContainer {
+    grid-gap: 5rem;
+  }
+}

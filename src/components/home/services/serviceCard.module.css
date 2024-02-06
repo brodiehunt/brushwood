@@ -40,25 +40,6 @@
   padding-bottom: 0.1rem;
 }
 
-.cardLink::after {
-  content: "";
-  background-color: var(--blue-700);
-  position: absolute;
-  top: 105%;
-  left: 0;
-  height: 3px;
-  width: 100%;
-  transform: scaleX(0);
-  transform-origin: left;
-  border-radius: var(--border-radius-sml);
-  transition: 0.2s ease all;
-}
-
-.cardLink:hover.cardLink::after {
-  width: 100%;
-  transform: scaleX(1);
-}
-
 @media (min-width: 1024px) {
   .serviceTitle {
     font-size: 1.5rem;
