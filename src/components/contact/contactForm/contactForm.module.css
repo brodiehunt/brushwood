@@ -1,0 +1,87 @@
+.formTitle {
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contactForm {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.formLabel {
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.formInput {
+  padding: 0.75rem;
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--border-radius-sml);
+  font-family: "League Spartan", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.formInput.inputFieldError {
+  border: 1px solid var(--error-red-600);
+}
+
+.formInput:focus {
+  outline-color: var(--blue-700);
+}
+
+.inputError {
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: var(--error-red-600);
+}
+
+.submitButton {
+  color: var(--text-light);
+  background: var(--blue-700);
+  padding: 0.75rem 2rem;
+  font-size: 1.125rem;
+  border: none;
+  border-radius: var(--border-radius-sml);
+  transition: 0.2 ease all;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background: var(--blue-500);
+}
+.submitButton:disabled {
+  background-color: var(--blue-300);
+}
+
+.submitError,
+.submitSuccess {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius-sml);
+}
+
+.submitSuccess {
+  background-color: var(--blue-200);
+}
+
+.submitError {
+  background-color: var(--error-red-200);
+}
+
+@media (min-width: 768px) {
+  .formTitle {
+    font-size: 3rem;
+  }
+}
