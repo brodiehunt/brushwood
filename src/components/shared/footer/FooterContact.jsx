@@ -6,19 +6,27 @@ const FooterContact = () => {
     <div className={styles.contactContainer}>
       <div className={styles.column1}>
         <div className={styles.bold}>Brushwood Sydney Office</div>
-        <p>13 Endeavour Road</p>
-        <p>Caringbah, NSW 2229</p>
+        <p className={styles.light}>13 Endeavour Road</p>
+        <p className={styles.light}>Caringbah, NSW 2229</p>
       </div>
       <div className={styles.column2}>
         <div className={styles.bold}>Contact Us Sydney</div>
         <p className={styles.contactIconContainer}>
-          <PiPhone className={styles.contactIcon} /> (02) 7250 9440
+          <PiPhone className={styles.contactIcon} />
+          <a className={styles.contactLink} href="tel:+61272509440">
+            (02) 7250 9440
+          </a>
         </p>
         <p className={styles.contactIconContainer}>
           <IoMailOpenOutline className={styles.contactIcon} />{" "}
-          info@brushwoodgroup.com.au
+          <a
+            className={styles.contactLink}
+            href="mailto: info@brushwoodgroup.com.au"
+          >
+            info@brushwoodgroup.com.au
+          </a>
         </p>
-        <p className={styles.contactIconContainer}>
+        <p className={`${styles.contactIconContainer} ${styles.light}`}>
           Operating hours: Mon-Sat: 8am - 5pm
         </p>
       </div>

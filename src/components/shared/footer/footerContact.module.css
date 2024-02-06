@@ -10,6 +10,8 @@
 
 .bold {
   font-weight: 600;
+  color: var(--blue-700);
+  margin-bottom: 0.5rem;
 }
 
 .contactIconContainer {
@@ -17,11 +19,23 @@
   align-items: center;
   justify-content: center;
   gap: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .contactIcon {
   color: var(--blue-700);
   padding-bottom: 0.2rem;
+}
+
+.contactLink {
+  opacity: 0.6;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.light {
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
 }
 @media (min-width: 768px) {
   .contactContainer {
