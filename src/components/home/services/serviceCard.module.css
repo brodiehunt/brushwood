@@ -33,13 +33,7 @@
 
 .cardLink {
   margin-top: auto;
-  text-decoration: none;
   align-self: start;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0.5rem;
-  position: relative;
 }
 
 .learnMoreIcon {

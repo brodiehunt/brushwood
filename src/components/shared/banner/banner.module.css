@@ -23,17 +23,13 @@
 @media (min-width: 768px) {
   .bannerSection {
     border-radius: var(--border-radius-lrg);
-    margin: 7.5rem 1.5rem;
+    margin: var(--section-pd);
     aspect-ratio: 700/300;
     margin-bottom: var(--section-mg-bottom);
   }
 }
 
 @media (min-width: 1024px) {
-  .bannerSection {
-    /* margin: 6rem 1.5rem; */
-    margin-bottom: var(--section-mg-bottom);
-  }
 }
 
 @media (min-width: 1444px) {

@@ -154,6 +154,7 @@ ul {
 @media (min-width: 768px) {
   body {
     --section-mg-bottom: 6rem;
+    --section-pd: 0 1.5rem;
   }
 }
 
@@ -161,11 +162,18 @@ ul {
   body {
     font-size: 1.25rem;
     --section-mg-bottom: 7.5rem;
+    --section-pd: 0 2.5rem;
   }
 }
 
 @media (min-width: 1444px) {
   body {
     --section-mg-bottom: 12rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  body {
+    --section-pd: 0;
   }
 }

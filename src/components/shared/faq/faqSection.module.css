@@ -24,6 +24,9 @@
 }
 
 @media (min-width: 768px) {
+  .faqSection {
+    padding: var(--section-pd);
+  }
   .faqTitle {
     font-size: 3rem;
   }
@@ -39,7 +42,6 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    padding: 0 1.5rem;
   }
 
   .faqHeader {

@@ -48,7 +48,7 @@
 
 @media (min-width: 768px) {
   .pageHeader {
-    padding: 0 1.5rem;
+    padding: var(--section-pd);
     margin-bottom: var(--section-mg-bottom);
   }
 

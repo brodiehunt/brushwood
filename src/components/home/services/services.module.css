@@ -58,6 +58,7 @@
 @media (min-width: 768px) {
   .servicesSection {
     padding: 5rem 1.5rem;
+    padding: var(--section-pd);
     margin-bottom: var(--section-mg-bottom);
   }
 

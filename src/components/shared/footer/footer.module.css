@@ -30,7 +30,7 @@
 
   .container {
     margin-top: 2rem;
-    padding: 0 1.5rem;
+    padding: var(--section-pd);
     flex-direction: row;
     justify-content: space-between;
   }

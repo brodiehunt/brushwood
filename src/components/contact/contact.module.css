@@ -1,0 +1,15 @@
+.contactGrid {
+  padding: 0 1rem;
+  margin: 0 auto;
+  margin-bottom: var(--section-mg-bottom);
+  max-width: 1444px;
+}
+
+@media (min-width: 768px) {
+  .contactGrid {
+    padding: var(--section-pd);
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 3fr 2fr;
+  }
+}

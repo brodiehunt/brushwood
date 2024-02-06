@@ -130,6 +130,9 @@
 }
 
 @media (min-width: 768px) {
+  .valuesSection {
+    /* padding: var(--section-pd); */
+  }
   .valuesTitle {
     font-size: 3rem;
   }

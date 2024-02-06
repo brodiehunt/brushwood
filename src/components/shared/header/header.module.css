@@ -64,7 +64,10 @@
   /* End Items Hidden */
 
   .header {
-    padding: 2rem 1.5rem;
+    padding: var(--section-pd);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* padding: 2rem 1.5rem; */
   }
 
   .headerLogoLink {

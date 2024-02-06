@@ -1,7 +1,7 @@
 import styles from "./serviceCard.module.css";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
-
+import ButtonLink from "../../shared/buttonLink/ButtonLink";
 const ServiceCard = ({ service }) => {
   return (
     <div className={styles.serviceCard}>
@@ -12,10 +12,12 @@ const ServiceCard = ({ service }) => {
       />
       <h3 className={styles.serviceTitle}>{service.title}</h3>
       <p className={styles.serviceDescription}>{service.description}</p>
-      <Link className={styles.cardLink} to={`${service.href}`}>
-        Learn More
-        <IoIosArrowForward className={styles.learnMoreIcon} />
-      </Link>
+      <div className={styles.cardLink}>
+        <ButtonLink href={service.href} type="internal" theme="hollow">
+          Learn More
+          <IoIosArrowForward className={styles.learnMoreIcon} />
+        </ButtonLink>
+      </div>
     </div>
   );
 };

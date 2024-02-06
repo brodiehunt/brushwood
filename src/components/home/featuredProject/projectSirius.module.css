@@ -57,7 +57,7 @@
 
 @media (min-width: 768px) {
   .siriusSection {
-    padding: 0 1.5rem;
+    padding: var(--section-pd);
     margin-bottom: var(--section-mg-bottom);
     display: grid;
     grid-template-columns: 2fr 3fr;
