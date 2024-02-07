@@ -7,6 +7,7 @@
   color: var(--blue-700);
   position: relative;
   width: fit-content;
+  transition: 0.5s ease all;
 }
 
 .hollow svg {
@@ -44,9 +45,33 @@
   border-radius: var(--border-radius-xl);
   background-color: var(--blue-700);
   width: fit-content;
-  transition: 0.2s ease all;
+  transition: 0.5s ease all;
 }
 
 .full:hover {
   background-color: var(--blue-500);
+}
+
+/* Dark mode */
+
+.dark.hollow {
+  color: var(--text-light);
+  transition: 0.5s ease all;
+}
+
+.dark.hollow .svg {
+  color: var(--text-light);
+  transition: 0.5s ease all;
+}
+
+.dark.full {
+  background-color: inherit;
+  border: 1px solid var(--text-light);
+  transition: 0.5s ease all;
+}
+
+.dark.full:hover {
+  color: var(--blue-700);
+  border-color: var(--blue-700);
+  transition: 0.5s ease all;
 }

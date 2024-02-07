@@ -11,6 +11,7 @@
   margin-bottom: 2rem;
   font-weight: 600;
   font-size: 2rem;
+  transition: 0.5s ease all;
 }
 .circle {
   position: absolute;
@@ -56,6 +57,20 @@
   margin-bottom: 1rem;
 }
 
+/* dark mode */
+
+.dark .servicesTitle {
+  color: var(--text-light);
+  transition: 0.5s ease all;
+}
+
+.dark .circle1,
+.dark .circle2,
+.dark .circle3,
+.dark .circle4 {
+  background: radial-gradient(circle, var(--blue-700), black);
+  transition: 0.5s ease all;
+}
 @media (min-width: 768px) {
   .servicesSection {
     padding: 5rem 1.5rem;

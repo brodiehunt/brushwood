@@ -1,0 +1,40 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  padding: 3rem 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.gridColOne {
+  justify-self: center;
+  align-self: center;
+}
+
+.pageTitle {
+  font-size: 5rem;
+  color: var(--text-light);
+  font-weight: 700;
+}
+
+.span1,
+.span2,
+.span3 {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.span2 {
+  padding-left: 2rem;
+}
+
+.span3 {
+  padding-left: 4rem;
+}
+
+.sceneContainer {
+  justify-self: center;
+  height: 500px;
+  width: 500px;
+}

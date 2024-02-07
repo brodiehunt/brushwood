@@ -85,7 +85,6 @@ const TestimonialSlider = () => {
   ]);
   const [isRight, setIsRight] = useState(true);
 
-  console.log(regularAnim.initial);
   const rightSlide = () => {
     const newState = [...testSlider.slice(1, 5), testSlider[2]];
     setIsRight(true);

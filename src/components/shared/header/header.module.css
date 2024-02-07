@@ -3,6 +3,7 @@
   top: 0;
   background-color: white;
   z-index: 5;
+  transition: 0.5s ease all;
 }
 
 .header {
@@ -10,6 +11,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-bottom: 1px solid var(--neutral-200);
+  transition: 0.5s ease all;
 }
 
 .hamburgerButton {
@@ -25,6 +27,7 @@
   color: var(--blue-700);
   height: 30px;
   width: 30px;
+  transition: 0.5s ease all;
 }
 
 .headerLogoLink {
@@ -45,6 +48,7 @@
   align-self: center;
   display: flex;
   align-items: center;
+  transition: 0.5s ease all;
 }
 
 /* Items hidden in mobile view */
@@ -54,6 +58,30 @@
 
 .contactButton {
   display: none;
+}
+
+/* Dark mode */
+.dark.stickyContainer,
+.dark .header {
+  background-color: black;
+  transition: 0.5s ease all;
+}
+
+.dark .header {
+  border-bottom: 1px solid rgb(248, 250, 252, 0.2);
+  transition: 0.5s ease all;
+}
+
+.dark .hamburgerIcon,
+.dark .headerPhoneButton,
+.dark .largeNavLink {
+  color: var(--text-light);
+  transition: 0.5s ease all;
+}
+
+.dark .headerLogo {
+  filter: invert(0.1);
+  transition: 0.5s ease all;
 }
 
 @media (min-width: 768px) {
@@ -95,9 +123,10 @@
     font-weight: 400;
     display: block;
     padding-top: 0.1rem;
+    transition: 0.5s ease all;
   }
 
-  .largeNavDropdown {
+  /* .largeNavDropdown {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +141,7 @@
     letter-spacing: 0.12rem;
     font-weight: 400;
     padding-top: 0.1rem;
-  }
+  } */
 
   .largeNavLink:hover,
   .largeNavDropdown:hover {
@@ -125,7 +154,7 @@
     outline-color: var(--blue-700);
   }
 
-  .arrow {
+  /* .arrow {
     transition: 0.2s ease all;
   }
 
@@ -165,7 +194,7 @@
 
   .subLinkContainer:last-of-type {
     border-bottom: none;
-  }
+  } */
 
   .contactButton {
     display: block;

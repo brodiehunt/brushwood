@@ -3,7 +3,7 @@ import structuralIcon from "../../../assets/home/servicesIcons/serviceIcon.svg";
 import temporaryIcon from "../../../assets/home/servicesIcons/serviceIcon2.svg";
 import facadeIcon from "../../../assets/home/servicesIcons/facade_icon.svg";
 import roadIcon from "../../../assets/home/servicesIcons/road_icon.svg";
-
+import { motion } from "framer-motion";
 import ServiceCard from "./serviceCard";
 const services = [
   {
@@ -36,32 +36,52 @@ const services = [
   },
 ];
 
-const Services = () => {
+const Services = ({ darkmode }) => {
   return (
-    <section className={styles.servicesSection}>
+    <section
+      className={
+        darkmode
+          ? `${styles.servicesSection} ${styles.dark}`
+          : styles.servicesSection
+      }
+    >
       <h2 className={styles.servicesTitle}>
         We Provide A Wide Range Of Services
       </h2>
-      <div
+      <motion.div
+        key={darkmode + "1"}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 1 } }}
         className={`${styles.circle} ${styles.circle1}`}
         aria-hidden="true"
-      ></div>
-      <div
+      ></motion.div>
+      <motion.div
+        key={darkmode + "2"}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 1 } }}
         className={`${styles.circle} ${styles.circle2}`}
         aria-hidden="true"
-      ></div>
+      ></motion.div>
 
-      <div
+      <motion.div
+        key={darkmode + "3"}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 1 } }}
         className={`${styles.circle} ${styles.circle3}`}
         aria-hidden="true"
-      ></div>
-      <div
+      ></motion.div>
+      <motion.div
+        key={darkmode + "4"}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 1 } }}
         className={`${styles.circle} ${styles.circle4}`}
         aria-hidden="true"
-      ></div>
+      ></motion.div>
       <div className={styles.cardsContainer}>
         {services.map((service, index) => {
-          return <ServiceCard key={index} service={service} />;
+          return (
+            <ServiceCard key={index} service={service} darkmode={darkmode} />
+          );
         })}
       </div>
     </section>

@@ -7,19 +7,14 @@ import logo from "../../../assets/shared/logo.svg";
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import { useLocation, Link } from "react-router-dom";
-import { MdExpandMore } from "react-icons/md";
-import { motion } from "framer-motion";
-import { subContainerVariants, linkVariants } from "../../../util/animate";
 import ButtonLink from "../buttonLink/ButtonLink";
 
-const Header = () => {
+const Header = ({ darkmode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [subMenuOpen, setSubMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     setMenuOpen(false);
-    setSubMenuOpen(false);
     document.body.style.overflow = "unset";
   }, [location.pathname]);
 
@@ -32,13 +27,15 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const toggleSubMenu = () => {
-    setSubMenuOpen(!subMenuOpen);
-  };
-
   return (
-    <div className={styles.stickyContainer}>
-      <header className={`${styles.header} ${styles.specialHeader}`}>
+    <div
+      className={
+        darkmode
+          ? `${styles.stickyContainer} ${styles.dark}`
+          : `${styles.stickyContainer}`
+      }
+    >
+      <header className={styles.header}>
         <button
           aria-label="toggle dropdown menu"
           className={styles.hamburgerButton}
@@ -72,52 +69,14 @@ const Header = () => {
           <Link to="/resources" className={styles.largeNavLink}>
             resources
           </Link>
-          {/* <button className={styles.largeNavDropdown} onClick={toggleSubMenu}>
-          Resources
-          <MdExpandMore
-            className={subMenuOpen ? `${styles.arrowUp}` : `${styles.arrow}`}
-          />
-          {subMenuOpen && (
-            <motion.div
-              variants={subContainerVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              className={styles.navDropdownLinksContainer}
-            >
-              <motion.div
-                variants={linkVariants}
-                className={styles.subLinkContainer}
-              >
-                <Link to="/services" className={styles.subLink}>
-                  Service 1
-                </Link>
-              </motion.div>
-              <motion.div
-                variants={linkVariants}
-                className={styles.subLinkContainer}
-              >
-                <Link to="/services" className={styles.subLink}>
-                  Service 2
-                </Link>
-              </motion.div>
-              <motion.div
-                variants={linkVariants}
-                className={styles.subLinkContainer}
-              >
-                <Link to="/services" className={styles.subLink}>
-                  Service 3
-                </Link>
-              </motion.div>
-            </motion.div>
-          )}
-        </button> */}
         </nav>
-        {/* <Link to="/contact" className={styles.contactButton}>
-        Contact
-      </Link> */}
         <div className={styles.contactButton}>
-          <ButtonLink href="/contact" type="internal" theme="full">
+          <ButtonLink
+            href="/contact"
+            type="internal"
+            theme="full"
+            darkmode={darkmode}
+          >
             Contact
           </ButtonLink>
         </div>

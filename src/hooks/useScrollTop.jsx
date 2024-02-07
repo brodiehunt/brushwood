@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-const useScroll = () => {
+const useScrollTop = () => {
   const location = useLocation();
 
   useEffect(() => {
@@ -8,4 +8,4 @@ const useScroll = () => {
   }, [location]);
 };
 
-export default useScroll;
+export default useScrollTop;
