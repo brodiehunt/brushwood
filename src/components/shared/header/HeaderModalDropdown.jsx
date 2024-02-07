@@ -56,7 +56,12 @@ const HeaderModalDropdown = ({ setMenuOpen }) => {
             Services
           </Link>
         </motion.div>
-        <motion.button
+        <motion.div variants={linkVariants} className={styles.navItem}>
+          <Link className={styles.navLink} to="/resources">
+            Resources
+          </Link>
+        </motion.div>
+        {/* <motion.button
           variants={linkVariants}
           className={styles.navDropdownButton}
           onClick={(event) => {
@@ -102,7 +107,7 @@ const HeaderModalDropdown = ({ setMenuOpen }) => {
               </motion.div>
             </motion.div>
           )}
-        </motion.button>
+        </motion.button> */}
         <motion.div
           className={styles.buttonContainer}
           variants={navButtonVariants}

@@ -68,7 +68,10 @@ const Header = () => {
         <Link to="/services" className={styles.largeNavLink}>
           services
         </Link>
-        <button className={styles.largeNavDropdown} onClick={toggleSubMenu}>
+        <Link to="/resources" className={styles.largeNavLink}>
+          resources
+        </Link>
+        {/* <button className={styles.largeNavDropdown} onClick={toggleSubMenu}>
           Resources
           <MdExpandMore
             className={subMenuOpen ? `${styles.arrowUp}` : `${styles.arrow}`}
@@ -107,7 +110,7 @@ const Header = () => {
               </motion.div>
             </motion.div>
           )}
-        </button>
+        </button> */}
       </nav>
       {/* <Link to="/contact" className={styles.contactButton}>
         Contact

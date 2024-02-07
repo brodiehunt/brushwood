@@ -1,0 +1,29 @@
+/* FILEPATH: /Users/brodiehunt/Documents/currentProjects/brushwood/brushwood-app/src/components/resources/formStyles.module.css */
+
+.formButton {
+  background-color: var(--blue-700);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.formButton:hover {
+  background-color: var(--blue-500);
+}
+
+.resultContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.resultTitle {
+  font-size: 2rem;
+  color: var(--blue-700);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}

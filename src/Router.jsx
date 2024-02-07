@@ -6,6 +6,7 @@ import Services from "./pages/Services";
 import Service from "./pages/Service";
 import Projects from "./pages/Projects";
 import Project from "./pages/Project";
+import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 
@@ -36,6 +37,10 @@ const Router = () => {
         {
           path: "/services/:serviceId",
           element: <Service />,
+        },
+        {
+          path: "/resources",
+          element: <Resources />,
         },
         {
           path: "/contact",

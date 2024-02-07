@@ -1,0 +1,36 @@
+.pageHeader {
+  margin: 2rem 0;
+  padding: 0 1.5rem;
+  max-width: 1444px;
+}
+
+.pageTitle {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.blueText {
+  color: var(--blue-700);
+}
+
+@media (min-width: 768px) {
+  .pageHeader {
+    padding: var(--section-pd);
+  }
+
+  .pageTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pageHeader {
+    margin: 4rem auto 3rem auto;
+  }
+
+  .pageTitle {
+    font-size: 4rem;
+  }
+}
