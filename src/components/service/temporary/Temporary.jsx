@@ -6,9 +6,11 @@ import bannerImg from "../../../assets/shared/banner1.webp";
 import Banner from "../../../components/shared/banner/Banner";
 import BannerContent from "../../../components/shared/banner/BannerContent";
 import temporary2 from "../../../assets/services/temporary/temporary_2.webp";
+import { motion } from "framer-motion";
+import { pageAnimate } from "../../../util/animate";
 const Temporary = () => {
   return (
-    <>
+    <motion.div variants={pageAnimate} initial="initial" animate="animate">
       <div className={styles.pageContainer}>
         <header className={styles.pageHeader}>
           <h1 className={styles.pageTitle}>
@@ -100,7 +102,7 @@ const Temporary = () => {
           statement="Connect with us today and bring your engineering vision to life with our expert team."
         />
       </Banner>
-    </>
+    </motion.div>
   );
 };
 

@@ -4,9 +4,11 @@ import Banner from "../../../components/shared/banner/Banner";
 import BannerContent from "../../../components/shared/banner/BannerContent";
 import sirius from "../../../assets/home/featured_project_serius.webp";
 import wickplace from "../../../assets/projects/wicks_place_apartments.webp";
+import { motion } from "framer-motion";
+import { pageAnimate } from "../../../util/animate";
 const Facade = () => {
   return (
-    <>
+    <motion.div variants={pageAnimate} initial="initial" animate="animate">
       <div className={styles.pageContainer}>
         <header className={styles.pageHeader}>
           <h1 className={styles.pageTitle}>Facade Engineering & Design</h1>
@@ -79,7 +81,7 @@ const Facade = () => {
           statement="Connect with us today and bring your engineering vision to life with our expert team."
         />
       </Banner>
-    </>
+    </motion.div>
   );
 };
 

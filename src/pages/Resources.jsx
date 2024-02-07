@@ -3,9 +3,11 @@ import ResourceTemplate from "../components/resources/ResourceTemplate";
 import Banner from "../components/shared/banner/Banner";
 import BannerContent from "../components/shared/banner/BannerContent";
 import bannerImg from "../assets/shared/banner2.webp";
+import { motion } from "framer-motion";
+import { pageAnimate } from "../util/animate";
 const Resources = () => {
   return (
-    <div>
+    <motion.div variants={pageAnimate} initial="initial" animate="animate">
       <ResourcesHeader />
       <ResourceTemplate />
       <Banner bannerImg={bannerImg}>
@@ -14,7 +16,7 @@ const Resources = () => {
           statement="Connect with us today and bring your engineering vision to life with our expert team."
         />
       </Banner>
-    </div>
+    </motion.div>
   );
 };
 

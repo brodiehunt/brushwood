@@ -3,6 +3,8 @@ import Civil from "../components/service/civil/Civil";
 import Temporary from "../components/service/temporary/Temporary";
 import Facade from "../components/service/facade/Facade";
 import { useParams } from "react-router-dom";
+import { motion } from "framer-motion";
+import { pageAnimate } from "../util/animate";
 
 const Service = () => {
   const { serviceId } = useParams();

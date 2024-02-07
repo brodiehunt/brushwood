@@ -3,10 +3,12 @@ import BannerContent from "../components/shared/banner/BannerContent";
 import bannerImg from "../assets/shared/banner4.webp";
 import ProjectsHeader from "../components/projects/ProjectsHeader";
 import ProjectsContainer from "../components/projects/ProjectsContainer";
+import { motion } from "framer-motion";
+import { pageAnimate } from "../util/animate";
 
 const Projects = () => {
   return (
-    <div>
+    <motion.div variants={pageAnimate} initial="initial" animate="animate">
       <ProjectsHeader />
       <ProjectsContainer />
       <Banner bannerImg={bannerImg}>
@@ -15,7 +17,7 @@ const Projects = () => {
           statement="Connect with us today and bring your engineering vision to life with our expert team."
         />
       </Banner>
-    </div>
+    </motion.div>
   );
 };
 

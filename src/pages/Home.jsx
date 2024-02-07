@@ -11,10 +11,12 @@ import FaqSection from "../components/shared/faq/FaqSection";
 
 import { homepageAccordionData } from "../components/data/accordionData.jsx";
 import { homeSlider } from "../components/data/logoBannerSlider.js";
+import { motion } from "framer-motion";
+import { pageAnimate } from "../util/animate";
 
 const Home = () => {
   return (
-    <div>
+    <motion.div variants={pageAnimate} initial="initial" animate="animate">
       Hello Home
       <Services />
       <TopCompanies sliderData={homeSlider} title="Trusted by Top Companies" />
@@ -26,7 +28,7 @@ const Home = () => {
       <TestimonialSlider />
       <ProjectsSection />
       <FaqSection questionData={homepageAccordionData} />
-    </div>
+    </motion.div>
   );
 };
 

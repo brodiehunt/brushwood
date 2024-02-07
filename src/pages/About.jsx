@@ -8,10 +8,12 @@ import OurProcess from "../components/about/ourProcess/OurProcess";
 import OurValues from "../components/about/ourValues/OurValues";
 import TopCompanies from "../components/home/topCompanies/TopCompanies";
 import { aboutSlider } from "../components/data/logoBannerSlider";
-
-const About = () => {
+import { motion } from "framer-motion";
+import { pageAnimate } from "../util/animate";
+const About = ({ key }) => {
+  console.log(key);
   return (
-    <div>
+    <motion.div variants={pageAnimate} initial="initial" animate="animate">
       <PageHeader headerData={aboutHeader} />
       <OurProcess />
       <ProfessionalAffilitations />
@@ -26,7 +28,7 @@ const About = () => {
           statement="Connect with us today and bring your engineering vision to life with our expert team."
         />
       </Banner>
-    </div>
+    </motion.div>
   );
 };
 

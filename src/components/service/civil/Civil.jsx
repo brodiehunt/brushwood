@@ -3,9 +3,11 @@ import bannerImg from "../../../assets/shared/banner1.webp";
 import Banner from "../../../components/shared/banner/Banner";
 import BannerContent from "../../../components/shared/banner/BannerContent";
 import macarthur from "../../../assets/projects/macarthur_square_road.webp";
+import { motion } from "framer-motion";
+import { pageAnimate } from "../../../util/animate";
 const Civil = () => {
   return (
-    <>
+    <motion.div variants={pageAnimate} initial="initial" animate="animate">
       <div className={styles.pageContainer}>
         <header className={styles.pageHeader}>
           <h1 className={styles.pageTitle}>Civil Engineering</h1>
@@ -71,7 +73,7 @@ const Civil = () => {
           statement="Connect with us today and bring your engineering vision to life with our expert team."
         />
       </Banner>
-    </>
+    </motion.div>
   );
 };
 

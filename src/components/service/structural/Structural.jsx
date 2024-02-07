@@ -6,9 +6,11 @@ import bannerImg from "../../../assets/shared/banner1.webp";
 import Banner from "../../../components/shared/banner/Banner";
 import BannerContent from "../../../components/shared/banner/BannerContent";
 import structural_3 from "../../../assets/services/structural/structural_3.webp";
+import { motion } from "framer-motion";
+import { pageAnimate } from "../../../util/animate";
 const Structural = () => {
   return (
-    <>
+    <motion.div variants={pageAnimate} initial="initial" animate="animate">
       <div className={styles.pageContainer}>
         <header className={styles.pageHeader}>
           <h1 className={styles.pageTitle}>Structural Engineering</h1>
@@ -93,7 +95,7 @@ const Structural = () => {
           statement="Connect with us today and bring your engineering vision to life with our expert team."
         />
       </Banner>
-    </>
+    </motion.div>
   );
 };
 
