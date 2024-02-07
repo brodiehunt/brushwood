@@ -37,41 +37,42 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
-      <button
-        aria-label="toggle dropdown menu"
-        className={styles.hamburgerButton}
-        onClick={toggleMenuOpen}
-        aria-expanded={menuOpen}
-      >
-        {menuOpen ? (
-          <IoClose className={styles.hamburgerIcon} />
-        ) : (
-          <RxHamburgerMenu className={styles.hamburgerIcon} />
-        )}
-      </button>
-      {/* Large screen nav here */}
-      <Link className={styles.headerLogoLink} to="/">
-        <img
-          className={styles.headerLogo}
-          src={logo}
-          alt="brushwood contruction logo"
-        />
-      </Link>
-      <nav className={styles.largeNav}>
-        <Link to="/projects" className={styles.largeNavLink}>
-          projects
+    <div className={styles.stickyContainer}>
+      <header className={`${styles.header} ${styles.specialHeader}`}>
+        <button
+          aria-label="toggle dropdown menu"
+          className={styles.hamburgerButton}
+          onClick={toggleMenuOpen}
+          aria-expanded={menuOpen}
+        >
+          {menuOpen ? (
+            <IoClose className={styles.hamburgerIcon} />
+          ) : (
+            <RxHamburgerMenu className={styles.hamburgerIcon} />
+          )}
+        </button>
+        {/* Large screen nav here */}
+        <Link className={styles.headerLogoLink} to="/">
+          <img
+            className={styles.headerLogo}
+            src={logo}
+            alt="brushwood contruction logo"
+          />
         </Link>
-        <Link to="/about" className={styles.largeNavLink}>
-          about
-        </Link>
-        <Link to="/services" className={styles.largeNavLink}>
-          services
-        </Link>
-        <Link to="/resources" className={styles.largeNavLink}>
-          resources
-        </Link>
-        {/* <button className={styles.largeNavDropdown} onClick={toggleSubMenu}>
+        <nav className={styles.largeNav}>
+          <Link to="/projects" className={styles.largeNavLink}>
+            projects
+          </Link>
+          <Link to="/about" className={styles.largeNavLink}>
+            about
+          </Link>
+          <Link to="/services" className={styles.largeNavLink}>
+            services
+          </Link>
+          <Link to="/resources" className={styles.largeNavLink}>
+            resources
+          </Link>
+          {/* <button className={styles.largeNavDropdown} onClick={toggleSubMenu}>
           Resources
           <MdExpandMore
             className={subMenuOpen ? `${styles.arrowUp}` : `${styles.arrow}`}
@@ -111,29 +112,30 @@ const Header = () => {
             </motion.div>
           )}
         </button> */}
-      </nav>
-      {/* <Link to="/contact" className={styles.contactButton}>
+        </nav>
+        {/* <Link to="/contact" className={styles.contactButton}>
         Contact
       </Link> */}
-      <div className={styles.contactButton}>
-        <ButtonLink href="/contact" type="internal" theme="full">
-          Contact
-        </ButtonLink>
-      </div>
+        <div className={styles.contactButton}>
+          <ButtonLink href="/contact" type="internal" theme="full">
+            Contact
+          </ButtonLink>
+        </div>
 
-      {/* Large screen nav ends here */}
-      <a
-        className={styles.headerPhoneButton}
-        href="tel:61401810414"
-        aria-label="call brushwood contruction"
-      >
-        <PiPhone aria-hidden="true" className={styles.hamburgerIcon} />
-      </a>
+        {/* Large screen nav ends here */}
+        <a
+          className={styles.headerPhoneButton}
+          href="tel:61401810414"
+          aria-label="call brushwood contruction"
+        >
+          <PiPhone aria-hidden="true" className={styles.hamburgerIcon} />
+        </a>
 
-      <AnimatePresence>
-        {menuOpen && <HeaderModalDropdown setMenuOpen={setMenuOpen} />}
-      </AnimatePresence>
-    </header>
+        <AnimatePresence>
+          {menuOpen && <HeaderModalDropdown setMenuOpen={setMenuOpen} />}
+        </AnimatePresence>
+      </header>
+    </div>
   );
 };
 

@@ -1,10 +1,15 @@
+.stickyContainer {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 5;
+}
+
 .header {
   padding: 1.25rem 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-bottom: 1px solid var(--neutral-200);
-  position: relative;
-  z-index: 5;
 }
 
 .hamburgerButton {
