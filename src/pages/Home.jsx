@@ -23,10 +23,11 @@ const Home = () => {
     <motion.div variants={pageAnimate} initial="initial" animate="animate">
       <Header />
       <Services setDarkmode={setDarkmode} darkmode={darkmode} />
-      <DarkModeIntersection setDarkmode={setDarkmode} darkmode={darkmode} />
+
       <Banner bannerImg={bannerImg}>
         <Typewriter />
       </Banner>
+      <DarkModeIntersection setDarkmode={setDarkmode} darkmode={darkmode} />
       <TopCompanies sliderData={homeSlider} title="Trusted by Top Companies" />
       <WhyUs />
       <ProjectSirius />

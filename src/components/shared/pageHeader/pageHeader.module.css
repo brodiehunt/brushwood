@@ -80,7 +80,7 @@
   .imgContainer {
     /* padding-right: 40%; */
     width: 50%;
-    aspect-ratio: 4/4;
+    aspect-ratio: 4/3;
   }
 
   .headerContentContainer {
@@ -106,5 +106,11 @@
 
   .headerDescription {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1444px) {
+  .imgContainer {
+    aspect-ratio: 5/3;
   }
 }

@@ -3,7 +3,7 @@
   top: 0;
   background-color: white;
   z-index: 5;
-  transition: 0.5s ease all;
+  transition: 0.3s ease all;
 }
 
 .header {
@@ -100,7 +100,6 @@
     padding: var(--section-pd);
     padding-top: 2rem;
     padding-bottom: 2rem;
-    /* padding: 2rem 1.5rem; */
   }
 
   .headerLogoLink {
@@ -126,23 +125,6 @@
     transition: 0.5s ease all;
   }
 
-  /* .largeNavDropdown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    border: none;
-    background: none;
-    padding: none;
-    position: relative;
-    cursor: pointer;
-    font-size: 0.875rem;
-    text-transform: capitalize;
-    letter-spacing: 0.12rem;
-    font-weight: 400;
-    padding-top: 0.1rem;
-  } */
-
   .largeNavLink:hover,
   .largeNavDropdown:hover {
     color: var(--blue-700);
@@ -150,62 +132,12 @@
 
   .largeNavLink:focus,
   .largeNavDropdown:focus {
-    /* color: var(--blue-700); */
     outline-color: var(--blue-700);
   }
-
-  /* .arrow {
-    transition: 0.2s ease all;
-  }
-
-  .arrowUp {
-    transform: rotate(180deg);
-    transition: 0.2s ease all;
-  }
-
-  .navDropdownLinksContainer {
-    position: absolute;
-    top: calc(100% + 2.5rem);
-    right: 0;
-    padding: 1rem;
-    background-color: var(--neutral-50);
-    border-radius: var(--border-radius-sml);
-    transition: 0.2s ease all;
-  }
-
-  .subLinkContainer {
-    width: 150px;
-    border-bottom: 1px solid var(--neutral-200);
-  }
-
-  .subLink {
-    padding: 0.5rem;
-    display: block;
-    text-decoration: none;
-    color: var(--text-dark);
-    font-size: 0.875rem;
-    text-transform: capitalize;
-  }
-
-  .subLink:hover,
-  .subLink:focus {
-    background-color: var(--blue-100);
-  }
-
-  .subLinkContainer:last-of-type {
-    border-bottom: none;
-  } */
 
   .contactButton {
     display: block;
     justify-self: end;
-    /* padding: 0.6rem 0.75rem 0.5rem 0.75rem;
-    background-color: var(--blue-700);
-    border-radius: var(--border-radius-lrg);
-    text-decoration: none;
-    color: var(--text-light);
-    font-weight: 400; */
-    /* text-transform: ; */
   }
 }
 

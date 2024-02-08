@@ -4,7 +4,7 @@ const ValueCard = ({ value }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: { duration: 2 } }}
+      whileInView={{ opacity: 1, transition: { duration: 1 } }}
       className={styles.valueCard}
     >
       <img className={styles.cardIcon} src={value.icon} alt={value.alt} />

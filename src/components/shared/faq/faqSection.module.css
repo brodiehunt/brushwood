@@ -14,6 +14,7 @@
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
+  color: var(--text-dark);
 }
 
 .faqDescription {
