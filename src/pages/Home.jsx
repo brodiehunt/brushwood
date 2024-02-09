@@ -23,13 +23,6 @@ const Home = () => {
   const { darkmode, setDarkmode } = useOutletContext();
   return (
     <>
-      <Helmet>
-        <title>Brushwood Engineering Group | Home</title>
-        <meta
-          name="description"
-          content="Brushwood Engineering Group is a leading engineering firm that specializes in providing innovative solutions. We are committed to delivering high-quality engineering services that meet the unique needs of our clients."
-        />
-      </Helmet>
       <motion.div variants={pageAnimate} initial="initial" animate="animate">
         <Header />
         <Services setDarkmode={setDarkmode} darkmode={darkmode} />

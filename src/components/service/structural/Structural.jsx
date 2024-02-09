@@ -15,12 +15,50 @@ const Structural = () => {
   return (
     <>
       <Helmet>
-        <title>
-          Brushwood Engineering Group | Structural Engineering Services
-        </title>
+        <title>Structural Engineering | Brushwood Engineering Group</title>
         <meta
           name="description"
-          content="Brushwood Engineering Group is a leading engineering firm that specializes in providing innovative structural engineering solutions. We are committed to delivering high-quality engineering services that meet the unique needs of our clients."
+          content="Comprehensive structural engineering services that ensure your construction project is safe, durable, and code-compliant. Our team of experienced and registered structural engineers is committed to delivering innovative and cost-effective solutions tailored to your specific needs."
+        />
+        <link
+          rel="canonical"
+          href="https://www.brushwoodgroup.com.au/services/structural-engineering"
+        />
+        {/* Facebook tags */}
+        <meta
+          property="og:title"
+          content="Structural Engineering | Brushwood Engineering Group"
+        />
+        <meta
+          property="og:description"
+          content="Comprehensive structural engineering services that ensure your construction project is safe, durable, and code-compliant. Our team of experienced and registered structural engineers is committed to delivering innovative and cost-effective solutions tailored to your specific needs."
+        />
+        <meta
+          property="og:url"
+          content="https://www.brushwoodgroup.com.au/services/structural-engineering"
+        />
+        <meta
+          property="og:image"
+          content="https://brushwood.netlify.app/logo.svg"
+        />
+        <meta property="og:type" content="website" />
+        {/* Twitter tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Structural Engineering | Brushwood Engineering Group"
+        />
+        <meta
+          name="twitter:description"
+          content="Comprehensive structural engineering services that ensure your construction project is safe, durable, and code-compliant. Our team of experienced and registered structural engineers is committed to delivering innovative and cost-effective solutions tailored to your specific needs."
+        />
+        <meta
+          name="twitter:image"
+          content="https://brushwood.netlify.app/logo.svg"
+        />
+        <meta
+          name="twitter:url"
+          content="https://www.brushwoodgroup.com.au/services/structural-engineering"
         />
       </Helmet>
       <motion.div variants={pageAnimate} initial="initial" animate="animate">

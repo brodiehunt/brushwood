@@ -11,11 +11,52 @@ const Civil = () => {
   return (
     <>
       <Helmet>
-        <title>Brushwood Engineering Group | Civil Engineering Services</title>
+        <title>Civil Engineering | Brushwood Engineering Group</title>
         <meta
           name="description"
-          content="Brushwood Engineering Group is a leading engineering firm that specializes in providing innovative solutions. We are committed to delivering high-quality engineering services that meet the unique needs of our clients."
+          content="We understand that robust infrastructure and sustainable mining practices are the backbone of economic growth. With a dynamic team of skilled civil engineers, we embark on projects that shape the future of communities, ensuring durability, efficiency, and environmental responsibility."
         />
+        <link
+          rel="canonical"
+          href="https://www.brushwoodgroup.com.au/services/civil-engineering"
+        />
+        {/* Facebook tags */}
+        <meta
+          property="og:title"
+          content="Civil Engineering | Brushwood Engineering Group"
+        />
+        <meta
+          property="og:description"
+          content="We understand that robust infrastructure and sustainable mining practices are the backbone of economic growth. With a dynamic team of skilled civil engineers, we embark on projects that shape the future of communities, ensuring durability, efficiency, and environmental responsibility."
+        />
+        <meta
+          property="og:url"
+          content="https://www.brushwoodgroup.com.au/services/civil-engineering"
+        />
+        <meta
+          property="og:image"
+          content="https://brushwood.netlify.app/logo.svg"
+        />
+        <meta property="og:type" content="website" />
+        {/* Twitter tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          property="og:title"
+          content="Civil Engineering | Brushwood Engineering Group"
+        />
+        <meta
+          property="og:description"
+          content="We understand that robust infrastructure and sustainable mining practices are the backbone of economic growth. With a dynamic team of skilled civil engineers, we embark on projects that shape the future of communities, ensuring durability, efficiency, and environmental responsibility."
+        />
+        <meta
+          property="og:url"
+          content="https://www.brushwoodgroup.com.au/services/civil-engineering"
+        />
+        <meta
+          property="og:image"
+          content="https://brushwood.netlify.app/logo.svg"
+        />
+        <meta property="og:type" content="website" />
       </Helmet>
       <motion.div variants={pageAnimate} initial="initial" animate="animate">
         <div className={styles.pageContainer}>

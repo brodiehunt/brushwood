@@ -11,12 +11,53 @@ const Resources = () => {
   return (
     <>
       <Helmet>
-        <title>Brushwood Engineering Group | Resources</title>
+        <title>Engineering Resources | Brushwood Engineering Group</title>
         <meta
           name="description"
-          content="Brushwood Engineering Group is a leading engineering firm that specializes in providing innovative solutions. We are committed to delivering high-quality engineering services that meet the unique needs of our clients."
+          content="Dive into Brushwood Engineering Group's comprehensive library, a curated collection designed for professionals. Whether you're estimating bearing pressures, determining ballast weights, or referencing the capacities of bolts, screws, and steel cables, our tools and tables provide reliable, accessible information to support & provide critical insights during the initial stages of your projects."
+        />
+        <link
+          rel="canonical"
+          href="https://www.brushwoodgroup.com.au/resources"
+        />
+        {/* Facebook tags */}
+        <meta
+          property="og:title"
+          content="Engineering Resources | Brushwood Engineering Group"
+        />
+        <meta
+          property="og:description"
+          content="Dive into Brushwood Engineering Group's comprehensive library, a curated collection designed for professionals. Whether you're estimating bearing pressures, determining ballast weights, or referencing the capacities of bolts, screws, and steel cables, our tools and tables provide reliable, accessible information to support & provide critical insights during the initial stages of your projects."
+        />
+        <meta
+          property="og:url"
+          content="https://www.brushwoodgroup.com.au/resources"
+        />
+        <meta
+          property="og:image"
+          content="https://brushwood.netlify.app/logo.svg"
+        />
+        <meta property="og:type" content="website" />
+        {/* Twitter tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Engineering Resources | Brushwood Engineering Group"
+        />
+        <meta
+          name="twitter:description"
+          content="Dive into Brushwood Engineering Group's comprehensive library, a curated collection designed for professionals. Whether you're estimating bearing pressures, determining ballast weights, or referencing the capacities of bolts, screws, and steel cables, our tools and tables provide reliable, accessible information to support & provide critical insights during the initial stages of your projects."
+        />
+        <meta
+          name="twitter:image"
+          content="https://brushwood.netlify.app/logo.svg"
+        />
+        <meta
+          name="twitter:url"
+          content="https://www.brushwoodgroup.com.au/resources"
         />
       </Helmet>
+
       <motion.div variants={pageAnimate} initial="initial" animate="animate">
         <ResourcesHeader />
         <ResourceTemplate />

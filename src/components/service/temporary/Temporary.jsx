@@ -14,11 +14,51 @@ const Temporary = () => {
     <>
       <Helmet>
         <title>
-          Brushwood Engineering Group | Temporary Structures & Event Engineering
+          Temporary Structures & Event Engineering | Brushwood Engineering Group
         </title>
         <meta
           name="description"
-          content="Brushwood Engineering Group is a leading engineering firm that specializes in providing innovative temporary structures and event engineering solutions. We are committed to delivering high-quality engineering services that meet the unique needs of our clients."
+          content="We specialise in providing high-quality temporary structures and event engineering solutions for a wide range of applications. Risk management for a temporary activation is paramount in ensuring sustainable designs for public interaction. We are committed to providing exceptional service and high-quality results for all of our clients, from small private events to large-scale international exhibitions. Our dedication to innovation, sustainability, and safety sets us apart from other temporary structures and event engineering firms. Our team of experienced and registered engineers is committed to delivering innovative and cost-effective solutions tailored to your specific needs."
+        />
+        <link
+          rel="canonical"
+          href="https://www.brushwoodgroup.com.au/services/temporary-structures"
+        />
+        {/* Facebook tags */}
+        <meta
+          property="og:title"
+          content="Temporary Structures & Event Engineering | Brushwood Engineering Group"
+        />
+        <meta
+          name="og:description"
+          content="We specialise in providing high-quality temporary structures and event engineering solutions for a wide range of applications. Risk management for a temporary activation is paramount in ensuring sustainable designs for public interaction. We are committed to providing exceptional service and high-quality results for all of our clients, from small private events to large-scale international exhibitions. Our dedication to innovation, sustainability, and safety sets us apart from other temporary structures and event engineering firms. Our team of experienced and registered engineers is committed to delivering innovative and cost-effective solutions tailored to your specific needs."
+        />
+        <meta
+          property="og:url"
+          content="https://www.brushwoodgroup.com.au/services/temporary-structures"
+        />
+        <meta
+          property="og:image"
+          content="https://brushwood.netlify.app/logo.svg"
+        />
+        <meta property="og:type" content="website" />
+        {/* Twitter tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Temporary Structures & Event Engineering | Brushwood Engineering Group"
+        />
+        <meta
+          name="twitter:description"
+          content="We specialise in providing high-quality temporary structures and event engineering solutions for a wide range of applications. Risk management for a temporary activation is paramount in ensuring sustainable designs for public interaction. We are committed to providing exceptional service and high-quality results for all of our clients, from small private events to large-scale international exhibitions. Our dedication to innovation, sustainability, and safety sets us apart from other temporary structures and event engineering firms. Our team of experienced and registered engineers is committed to delivering innovative and cost-effective solutions tailored to your specific needs."
+        />
+        <meta
+          name="twitter:image"
+          content="https://brushwood.netlify.app/logo.svg"
+        />
+        <meta
+          name="twitter:url"
+          content="https://www.brushwoodgroup.com.au/services/temporary-structures"
         />
       </Helmet>
       <motion.div variants={pageAnimate} initial="initial" animate="animate">

@@ -12,10 +12,50 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Brushwood Engineering Group | Services</title>
+        <title>Engineering Services | Brushwood Engineering Group</title>
         <meta
           name="description"
-          content="Brushwood Engineering Group is a leading engineering firm that specializes in providing innovative solutions. We are committed to delivering high-quality engineering services that meet the unique needs of our clients."
+          content="Our experienced team offers services in structural engineering, temporary structures, facade engineering and design, civil engineering, and event engineering."
+        />
+        <link
+          rel="canonical"
+          href="https://www.brushwoodgroup.com.au/services"
+        />
+        {/* Facebook tags */}
+        <meta
+          property="og:title"
+          content="Engineering Services | Brushwood Engineering Group"
+        />
+        <meta
+          property="og:description"
+          content="Our experienced team offers services in structural engineering, temporary structures, facade engineering and design, civil engineering, and event engineering."
+        />
+        <meta
+          property="og:url"
+          content="https://www.brushwoodgroup.com.au/services"
+        />
+        <meta
+          property="og:image"
+          content="https://brushwood.netlify.app/logo.svg"
+        />
+        <meta property="og:type" content="website" />
+        {/* Twitter tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Engineering Services | Brushwood Engineering Group"
+        />
+        <meta
+          name="twitter:description"
+          content="Our experienced team offers services in structural engineering, temporary structures, facade engineering and design, civil engineering, and event engineering."
+        />
+        <meta
+          name="twitter:image"
+          content="https://brushwood.netlify.app/logo.svg"
+        />
+        <meta
+          name="twitter:url"
+          content="https://www.brushwoodgroup.com.au/services"
         />
       </Helmet>
       <motion.div variants={pageAnimate} initial="initial" animate="animate">

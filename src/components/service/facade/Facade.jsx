@@ -12,10 +12,50 @@ const Facade = () => {
   return (
     <>
       <Helmet>
-        <title>Brushwood Engineering Group | Facade Engineering & Design</title>
+        <title>Facade Engineering | Brushwood Engineering Group</title>
         <meta
           name="description"
-          content="Brushwood Engineering Group is a leading engineering firm that specializes in providing innovative facade engineering and design solutions. We are committed to delivering high-quality engineering services that meet the unique needs of our clients."
+          content="We understand that a building's facade is not just a protective shell; it is a statement of design, sustainability, and technological advancement. Our team of dedicated facade engineers brings a wealth of experience and expertise to every project, ensuring that each facade is not only visually striking but also engineered to perform at the highest standards."
+        />
+        <link
+          rel="canonical"
+          href="https://www.brushwoodgroup.com.au/services/facade-engineering"
+        />
+        {/* Facebook tags */}
+        <meta
+          property="og:title"
+          content="Facade Engineering | Brushwood Engineering Group"
+        />
+        <meta
+          property="og:description"
+          content="We understand that a building's facade is not just a protective shell; it is a statement of design, sustainability, and technological advancement. Our team of dedicated facade engineers brings a wealth of experience and expertise to every project, ensuring that each facade is not only visually striking but also engineered to perform at the highest standards."
+        />
+        <meta
+          property="og:url"
+          content="https://www.brushwoodgroup.com.au/services/facade-engineering"
+        />
+        <meta
+          property="og:image"
+          content="https://brushwood.netlify.app/logo.svg"
+        />
+        <meta property="og:type" content="website" />
+        {/* Twitter tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Facade Engineering | Brushwood Engineering Group"
+        />
+        <meta
+          name="twitter:description"
+          content="We understand that a building's facade is not just a protective shell; it is a statement of design, sustainability, and technological advancement. Our team of dedicated facade engineers brings a wealth of experience and expertise to every project, ensuring that each facade is not only visually striking but also engineered to perform at the highest standards."
+        />
+        <meta
+          name="twitter:image"
+          content="https://brushwood.netlify.app/logo.svg"
+        />
+        <meta
+          name="twitter:url"
+          content="https://www.brushwoodgroup.com.au/services/facade-engineering"
         />
       </Helmet>
       <motion.div variants={pageAnimate} initial="initial" animate="animate">

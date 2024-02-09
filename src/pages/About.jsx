@@ -21,8 +21,9 @@ const About = ({ key }) => {
         <title>Brushwood Engineering Group | About us</title>
         <meta
           name="description"
-          content="Brushwood Engineering Group is a leading engineering firm that specializes in providing innovative solutions. We are committed to delivering high-quality engineering services that meet the unique needs of our clients."
+          content="At Brushwood Engineering Group, we are passionate about making a positive impact on the world using our wide range of engineering services. Our team of experienced engineers and designers is dedicated to helping our clients improve efficiency and deliver on business objectives"
         />
+        <link rel="canonical" href="https://www.brushwoodgroup.com.au/about" />
       </Helmet>
       <motion.div variants={pageAnimate} initial="initial" animate="animate">
         <PageHeader headerData={aboutHeader} />
