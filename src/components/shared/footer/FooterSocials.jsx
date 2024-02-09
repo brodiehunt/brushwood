@@ -1,6 +1,7 @@
 import styles from "./footerSocials.module.css";
 import { FaFacebookSquare, FaLinkedin, FaInstagram } from "react-icons/fa";
 
+// Footer social icon component
 const FooterSocials = () => {
   return (
     <div className={styles.socialsContainer}>

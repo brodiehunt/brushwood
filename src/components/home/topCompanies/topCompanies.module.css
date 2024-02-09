@@ -11,7 +11,8 @@
   position: relative;
   margin: 4rem auto;
   max-width: 1800px;
-  /* padding: 2rem 0; */
+  overflow: hidden;
+  white-space: nowrap;
   margin-bottom: var(--section-mg-bottom);
 }
 
@@ -20,10 +21,9 @@
   font-weight: 600;
   text-align: center;
   margin-bottom: 2rem;
-  width: fit-content;
   max-width: 80vw;
+  white-space: pre-wrap;
   margin: 0 auto;
-  white-space: wrap;
 }
 
 .topCompaniesSection {
@@ -32,11 +32,6 @@
   max-width: 1800px;
 }
 
-.relativeBox {
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-}
 .topCompaniesSection:hover .infiniteScrollBanner {
   animation-play-state: paused;
 }
@@ -76,7 +71,6 @@
 
 @media (min-width: 768px) {
   .relativeBox {
-    /* padding: 4rem 0; */
     margin-bottom: var(--section-mg-bottom);
   }
 
@@ -105,7 +99,6 @@
   .relativeBox {
     margin: 9rem auto;
     margin-bottom: var(--section-mg-bottom);
-    /* padding: 4rem 0; */
   }
 
   .title {

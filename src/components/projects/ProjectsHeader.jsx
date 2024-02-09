@@ -1,5 +1,6 @@
 import styles from "./projectsHeader.module.css";
 
+// Projects page header
 const ProjectsHeader = () => {
   return (
     <header className={styles.projectsHeader}>

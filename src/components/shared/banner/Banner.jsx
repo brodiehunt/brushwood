@@ -1,5 +1,6 @@
 import styles from "./banner.module.css";
 
+// Reusable banner component container
 const Banner = ({ children, bannerImg }) => {
   return (
     <section className={styles.bannerSection}>

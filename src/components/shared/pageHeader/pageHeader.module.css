@@ -1,5 +1,4 @@
 .pageHeader {
-  /* overflow: hidden; */
   position: relative;
   max-width: 1444px;
   margin: 0 auto;
@@ -22,7 +21,6 @@
 
 .headerContentContainer {
   background-color: white;
-  /* background-color: var(--neutral-50); */
   padding: 3rem 1rem;
   margin-right: 2rem;
   position: relative;
@@ -33,7 +31,7 @@
   position: absolute;
   top: 0;
   transform: translateY(-50%);
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: var(--neutral-300);
   text-wrap: nowrap;
@@ -62,7 +60,7 @@
   }
 
   .headerTitle {
-    font-size: 6.5rem;
+    font-size: 5.5rem;
   }
 
   .headerSubtitle {
@@ -78,7 +76,6 @@
 
 @media (min-width: 1024px) {
   .imgContainer {
-    /* padding-right: 40%; */
     width: 50%;
     aspect-ratio: 4/3;
   }
@@ -97,7 +94,7 @@
 
 @media (min-width: 1444px) {
   .headerTitle {
-    font-size: 9rem;
+    font-size: 7.5rem;
   }
 
   .headerSubtitle {

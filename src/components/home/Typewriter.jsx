@@ -1,6 +1,7 @@
 import styles from "./typewriter.module.css";
 import Typewriter from "typewriter-effect";
 
+// typewrite component - rendered within banner component on homepage
 const TypewriterComponent = () => {
   return (
     <div className={styles.typewriterContainer}>

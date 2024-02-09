@@ -1,7 +1,7 @@
-import johnHolland from "../../assets/home/topCompanies/john_holland.png";
+import johnHolland from "../../assets/home/topCompanies/john_holland.webp";
 import lendlease from "../../assets/home/topCompanies/lendlease.svg";
-import richardCrockes from "../../assets/home/topCompanies/richard_crockes.png";
-import cpb from "../../assets/home/topCompanies/cpb_contractors.png";
+import richardCrockes from "../../assets/home/topCompanies/richard_crockes.webp";
+import cpb from "../../assets/home/topCompanies/cpb_contractors.webp";
 import NSWGov from "../../assets/home/topCompanies/NSW_Gov.svg";
 
 import ausOpen from "../../assets/about/industry_partners/australian_open.svg";

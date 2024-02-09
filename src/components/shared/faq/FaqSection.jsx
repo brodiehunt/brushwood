@@ -2,6 +2,7 @@ import styles from "./faqSection.module.css";
 import FaqAccordion from "./FaqAccordion";
 import StillHaveQuestions from "./StillHaveQuestions";
 
+// Reusable faw section
 const FaqSection = ({ questionData }) => {
   return (
     <section className={styles.faqSection}>

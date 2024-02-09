@@ -1,13 +1,7 @@
 import styles from "./locations.module.css";
+import { APIProvider, Map, AdvancedMarker } from "@vis.gl/react-google-maps";
 
-import {
-  APIProvider,
-  Map,
-  AdvancedMarker,
-  Pin,
-  InfoWindow,
-} from "@vis.gl/react-google-maps";
-
+// Locations component - contact page - google maps api integration
 const Locations = () => {
   const position = { lat: -34.034584045410156, lng: 151.13418579101562 };
   const positionMelb = { lat: -37.831438690746666, lng: 144.92174922552343 };

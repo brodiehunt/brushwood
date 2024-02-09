@@ -9,10 +9,12 @@ import { AnimatePresence } from "framer-motion";
 import { useLocation, Link } from "react-router-dom";
 import ButtonLink from "../buttonLink/ButtonLink";
 
+// Top Header component
 const Header = ({ darkmode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
+  // When menu nav link click (modal) - unset overflow property on body contiainer
   useEffect(() => {
     setMenuOpen(false);
     document.body.style.overflow = "unset";

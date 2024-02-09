@@ -1,25 +1,19 @@
 import styles from "./whyUsItem.module.css";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-import {
-  motion,
-  useScroll,
-  useMotionValueEvent,
-  useTransform,
-} from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
+// Why us item card - why us section - home page
 const WhyUsItem = ({ item, index }) => {
   const itemRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: itemRef,
     offset: ["start end", "end start"],
   });
+
+  // Paralax scroll effect - top and bottom containers move in opposite directions (up and down)
   const bottomContainer = useTransform(scrollYProgress, [0, 1], [0, -400]);
   const topContainer = useTransform(scrollYProgress, [0, 1], [0, 400]);
-
-  // useMotionValueEvent(scrollYProgress, "change", (latest) => {
-  //   console.log("page Scroll: ", latest);
-  // });
 
   return (
     <div className={styles.itemContainer}>

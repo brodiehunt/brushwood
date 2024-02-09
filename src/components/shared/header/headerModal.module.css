@@ -13,7 +13,6 @@
   background-color: var(--neutral-50);
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
   max-width: 300px;
   padding: 2rem;
   position: relative;
@@ -32,7 +31,6 @@
   display: block;
   border-radius: var(--border-radius-sml);
   font-size: 1.25rem;
-  /* color: var(--blue-700); */
 }
 
 .navLink:hover,

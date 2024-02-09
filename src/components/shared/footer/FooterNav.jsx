@@ -2,6 +2,7 @@ import styles from "./footerNav.module.css";
 import Logo from "../../../assets/shared/logo.svg";
 import { Link } from "react-router-dom";
 
+// Footer Navigation component
 const FooterNav = () => {
   return (
     <div className={styles.footerNav}>

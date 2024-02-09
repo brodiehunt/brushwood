@@ -11,6 +11,41 @@ import communityIcon from "../../assets/services/servicesIcons/community_icon.sv
 import efficiencyIcon from "../../assets/services/servicesIcons/efficiency_icon.svg";
 import macarthurImg from "../../assets/projects/macarthur_square_road.webp";
 
+import structuralIcon from "../../assets/home/servicesIcons/serviceIcon.svg";
+import temporaryIcon from "../../assets/home/servicesIcons/serviceIcon2.svg";
+import facadeIcon from "../../assets/home/servicesIcons/facade_icon.svg";
+import roadIcon from "../../assets/home/servicesIcons/road_icon.svg";
+
+export const servicesCardsHomepage = [
+  {
+    icon: structuralIcon,
+    title: "Structural Engineering Services",
+    description:
+      "Designing and analysing structures for peak safety and durability, integrating advanced engineering with material sciences",
+    href: "/services/structural-engineering",
+  },
+  {
+    icon: temporaryIcon,
+    title: "Temporary Structures & Events",
+    description:
+      "Engineering custom solutions for temporary structures and events, focusing on safety, compliance, and innovative design",
+    href: "/services/temporary-structures",
+  },
+  {
+    icon: facadeIcon,
+    title: "Façade Engineering and Design",
+    description:
+      "Blending aesthetics and functionality in facade engineering for energy-efficient, harmonious, and sustainable designs",
+    href: "/services/facade-engineering",
+  },
+  {
+    icon: roadIcon,
+    title: "Civil Engineering Services",
+    description:
+      "Comprehensive civil engineering for infrastructure projects, emphasizing sustainable practices and resource efficiency",
+    href: "/services/civil-engineering",
+  },
+];
 export const servicesCards = [
   {
     title: "Temporary Structures & Events",

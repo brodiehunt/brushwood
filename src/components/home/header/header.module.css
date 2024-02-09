@@ -3,7 +3,6 @@
   position: relative;
   margin: 0 auto;
   max-width: 1444px;
-  /* padding: 0 1rem; */
   margin-bottom: 50svh;
 }
 
@@ -22,7 +21,6 @@
 }
 
 .pageTitle {
-  /* font-size: 5rem; */
   font-size: 3rem;
   color: var(--text-light);
   font-weight: 700;
@@ -48,7 +46,6 @@
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 600;
-  margin-left: 4rem;
   transition: 0.2s ease all;
 }
 
@@ -75,7 +72,6 @@
   .header {
     display: grid;
     grid-template-columns: unset;
-    /* grid-gap: 3rem; */
     grid-gap: 0;
     min-height: calc(100svh - 4rem);
     bottom: 0;
@@ -95,6 +91,10 @@
     font-size: 5rem;
   }
 
+  .pageStatement {
+    padding-left: 4rem;
+  }
+
   .span2 {
     padding-left: 2rem;
   }
@@ -107,6 +107,9 @@
     justify-self: center;
     min-height: 500px;
     z-index: -1;
+  }
+  .callToAction {
+    margin-left: 4rem;
   }
 }
 

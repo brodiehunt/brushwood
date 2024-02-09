@@ -2,12 +2,16 @@ import Spline from "@splinetool/react-spline";
 import styles from "./header.module.css";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
+
+// Header component - home page
 const Header = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end end"],
   });
+
+  // translate to values based on scrollYProgress
   const scaleVal = useTransform(scrollYProgress, [0, 1], [1, 4]);
   const titleOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
   const xDisplacement = useTransform(scrollYProgress, [0, 1], [0, -400]);

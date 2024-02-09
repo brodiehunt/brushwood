@@ -1,40 +1,15 @@
 import styles from "./timelineCard.module.css";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { motion } from "framer-motion";
+import { processCardAnim, processCardIconAnim } from "../../../util/animate";
 
-const iconAnimVars = {
-  initial: {
-    scale: 0,
-    opacity: 0,
-  },
-  animate: {
-    scale: 1,
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-    },
-  },
-};
-
-const cardAnim = {
-  initial: {
-    x: 300,
-    opacity: 0,
-  },
-  enter: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-    },
-  },
-};
-const TimelineCard = ({ item, index }) => {
+// Timeline card component - vertical timeline component - our process section - about page
+const TimelineCard = ({ item }) => {
   return (
     <article className={styles.timelineCardContainer}>
       <div className={styles.iconContainer}>
         <motion.div
           className={styles.motionIcon}
-          variants={iconAnimVars}
+          variants={processCardIconAnim}
           initial="initial"
           whileInView="animate"
         >
@@ -47,7 +22,7 @@ const TimelineCard = ({ item, index }) => {
         </motion.div>
       </div>
       <motion.div
-        variants={cardAnim}
+        variants={processCardAnim}
         initial="initial"
         whileInView="enter"
         className={styles.timelineCard}

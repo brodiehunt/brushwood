@@ -1,7 +1,6 @@
 .serviceCard {
   width: 100%;
   box-shadow: var(--shadow-lrg);
-  /* margin-top: 10rem; */
   border-radius: var(--border-radius-sml);
   overflow: hidden;
   position: sticky;
@@ -15,16 +14,6 @@
 .servicesCard:nth-child(odd) {
   background-color: var(--neutral-50);
 }
-/* .serviceCard:nth-child(2) {
-  top: 1.5rem;
-  background-color: var(--neutral-50);
-}
-.serviceCard:nth-child(3) {
-  top: 2rem;
-}
-.serviceCard:nth-child(4) {
-  top: 2.5rem;
-} */
 
 .imgContainer {
   aspect-ratio: 4/3;
@@ -72,7 +61,6 @@
 
 .linksContainer {
   display: flex;
-  /* justify-content: end; */
   gap: 2rem;
   margin-right: 1rem;
 }
@@ -90,19 +78,6 @@
     padding: 1rem;
     top: 5rem;
   }
-
-  /* .serviceCard:nth-child(2) {
-    top: 5.5rem;
-   
-  }
-  .serviceCard:nth-child(3) {
-    top: 6rem;
-    
-  }
-  .serviceCard:nth-child(4) {
-    top: 6.5rem;
-   
-  } */
 
   .serviceCard:nth-child(odd) .imgContainer {
     grid-row: 1/2;
@@ -148,7 +123,6 @@
 @media (min-width: 1024px) {
   .serviceCard {
     padding: 2rem;
-    /* background-color: var(--neutral-50); */
     gap: 4rem;
     padding: 4rem 3rem;
   }

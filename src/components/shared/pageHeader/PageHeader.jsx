@@ -1,5 +1,6 @@
 import styles from "./pageHeader.module.css";
 
+// Page header component for contact, about and services pages
 const PageHeader = ({ headerData }) => {
   return (
     <header className={styles.pageHeader}>

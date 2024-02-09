@@ -3,6 +3,7 @@ import styles from "./serviceCard.module.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { motion, useTransform } from "framer-motion";
 
+// Service Card component services page
 const ServiceCard = ({ service, range, targetScale, progress }) => {
   const scale = useTransform(progress, range, [1, targetScale]);
 
@@ -32,9 +33,6 @@ const ServiceCard = ({ service, range, targetScale, progress }) => {
           })}
         </div>
         <div className={styles.linksContainer}>
-          {/* <ButtonLink href="/contact" theme="hollow" type="internal">
-            Contact Us
-          </ButtonLink> */}
           <ButtonLink href={service.href} theme="hollow" type="internal">
             Learn More
             <IoIosArrowForward />

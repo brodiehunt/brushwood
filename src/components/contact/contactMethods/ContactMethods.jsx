@@ -2,11 +2,12 @@ import styles from "./contactMethods.module.css";
 import { MdOutlineMail } from "react-icons/md";
 import { PiPhone } from "react-icons/pi";
 import { SlLocationPin } from "react-icons/sl";
+
+// Contact methods component - contact page
 const ContactMethods = () => {
   return (
     <div className={styles.contactMethodsContainer}>
       <div className={styles.methodContainer}>
-        {/* <MdOutlineMail className={styles.icon} /> */}
         <h3 className={styles.title}>
           <MdOutlineMail className={styles.icon} /> Send us a message
         </h3>
@@ -22,7 +23,6 @@ const ContactMethods = () => {
         </a>
       </div>
       <div className={styles.methodContainer}>
-        {/* <PiPhone className={styles.icon} /> */}
         <h3 className={styles.title}>
           <PiPhone className={styles.icon} /> Call Us
         </h3>
@@ -35,7 +35,6 @@ const ContactMethods = () => {
         </a>
       </div>
       <div className={styles.methodContainer}>
-        {/* <SlLocationPin className={styles.icon} /> */}
         <h3 className={styles.title}>
           <SlLocationPin className={styles.icon} /> Visit Us
         </h3>

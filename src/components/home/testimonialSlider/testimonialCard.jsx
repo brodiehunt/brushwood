@@ -1,12 +1,13 @@
 import styles from "./testimonialCard.module.css";
-import starIcon from "../../../assets/home/testimonials/star.svg";
 import { motion } from "framer-motion";
-import { useLayoutEffect, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { IoMdStar } from "react-icons/io";
 
+// Testimonial card component - testimonial slider - home page
 const TestimonialCard = ({ testimonial, animationVars, isRight }) => {
   const ref = useRef(null);
-  // Change x value in animVars to be that of the article div (responsive animation)
+
+  // Change x value in animVars to be that of the article (responsive animation)
   useEffect(() => {
     animationVars.initial.x = isRight
       ? ref.current.offsetWidth

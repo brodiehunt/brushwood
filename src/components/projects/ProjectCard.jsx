@@ -2,6 +2,7 @@ import styles from "./projectCard.module.css";
 import ButtonLink from "../shared/buttonLink/ButtonLink";
 import { IoIosArrowForward } from "react-icons/io";
 
+// Project Card component - projects page
 const ProjectCard = ({ project }) => {
   return (
     <article className={styles.projectCard}>

@@ -1,7 +1,8 @@
 import styles from "./serviceCard.module.css";
-import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import ButtonLink from "../../shared/buttonLink/ButtonLink";
+
+// Service card component - services section - home page
 const ServiceCard = ({ service, darkmode }) => {
   return (
     <div

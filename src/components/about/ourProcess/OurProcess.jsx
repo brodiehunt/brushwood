@@ -1,5 +1,7 @@
 import styles from "./ourProcess.module.css";
 import VerticalTimeline from "./VerticalTimeline";
+
+// Our process section component - about page
 const OurProcess = () => {
   return (
     <section className={styles.processSection}>

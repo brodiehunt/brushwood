@@ -1,6 +1,8 @@
 import styles from "./bannerContent.module.css";
 import ButtonLink from "../buttonLink/ButtonLink";
 import { PiPhone } from "react-icons/pi";
+
+// Inner banner content component.
 const BannerContent = ({ title, statement }) => {
   return (
     <div className={styles.bannerContent}>

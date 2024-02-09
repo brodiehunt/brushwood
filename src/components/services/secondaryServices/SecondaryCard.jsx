@@ -1,5 +1,6 @@
 import styles from "./secondaryCard.module.css";
 
+// services page - secondary services section - secondary Card
 const SecondaryCard = ({ service }) => {
   return (
     <div className={styles.secondaryCard}>

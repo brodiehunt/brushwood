@@ -2,11 +2,9 @@
   padding: 1rem 0;
   max-width: 600px;
   margin: 0 auto;
-  /* background-color: var(--neutral-100); */
 }
 
 .accordionItem {
-  /* margin-bottom: 1rem; */
   padding: 0.5rem 1rem;
   padding-top: 0;
   transition: 0.2s ease all;
@@ -16,6 +14,7 @@
 .accordionButton {
   background: none;
   border: none;
+  color: var(--text-dark);
   border-bottom: 1px solid var(--neutral-200);
   width: 100%;
   padding: 0.5rem 0;
@@ -33,6 +32,7 @@
   text-align: left;
   font-weight: 500;
   max-width: 80%;
+  color: var(--text-dark);
 }
 
 .accordionIcon {

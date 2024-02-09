@@ -2,6 +2,7 @@ import styles from "./ourValues.module.css";
 import { valuesData } from "../../data/valuesData";
 import ValueCard from "./ValueCard";
 
+// Our values section component - about page
 const OurValues = () => {
   return (
     <section className={styles.valuesSection}>

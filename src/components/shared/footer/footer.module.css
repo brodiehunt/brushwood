@@ -1,7 +1,3 @@
-.footer {
-  /* padding-top: 4rem; */
-}
-
 .container {
   max-width: 1444px;
   width: 100%;
@@ -23,8 +19,6 @@
 
 @media (min-width: 768px) {
   .footer {
-    /* padding-top: 5rem; */
-
     margin: 0 auto;
   }
 

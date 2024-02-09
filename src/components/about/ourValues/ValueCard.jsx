@@ -1,5 +1,7 @@
 import styles from "./valueCard.module.css";
 import { motion } from "framer-motion";
+
+// Value card component - our values section - about page
 const ValueCard = ({ value }) => {
   return (
     <motion.div

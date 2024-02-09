@@ -1,6 +1,8 @@
 import styles from "./footerContact.module.css";
 import { PiPhone } from "react-icons/pi";
 import { IoMailOpenOutline } from "react-icons/io5";
+
+// Contact info section within footer component
 const FooterContact = () => {
   return (
     <div className={styles.contactContainer}>

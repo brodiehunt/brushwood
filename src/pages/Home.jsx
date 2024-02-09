@@ -17,24 +17,38 @@ import { homeSlider } from "../components/data/logoBannerSlider.js";
 import { motion } from "framer-motion";
 import { pageAnimate } from "../util/animate";
 
+import { Helmet } from "react-helmet-async";
+
 const Home = () => {
   const { darkmode, setDarkmode } = useOutletContext();
   return (
-    <motion.div variants={pageAnimate} initial="initial" animate="animate">
-      <Header />
-      <Services setDarkmode={setDarkmode} darkmode={darkmode} />
+    <>
+      <Helmet>
+        <title>Brushwood Engineering Group | Home</title>
+        <meta
+          name="description"
+          content="Brushwood Engineering Group is a leading engineering firm that specializes in providing innovative solutions. We are committed to delivering high-quality engineering services that meet the unique needs of our clients."
+        />
+      </Helmet>
+      <motion.div variants={pageAnimate} initial="initial" animate="animate">
+        <Header />
+        <Services setDarkmode={setDarkmode} darkmode={darkmode} />
 
-      <Banner bannerImg={bannerImg}>
-        <Typewriter />
-      </Banner>
-      <DarkModeIntersection setDarkmode={setDarkmode} darkmode={darkmode} />
-      <TopCompanies sliderData={homeSlider} title="Trusted by Top Companies" />
-      <WhyUs />
-      <ProjectSirius />
-      <TestimonialSlider />
-      <ProjectsSection />
-      <FaqSection questionData={homepageAccordionData} />
-    </motion.div>
+        <Banner bannerImg={bannerImg}>
+          <Typewriter />
+        </Banner>
+        <DarkModeIntersection setDarkmode={setDarkmode} darkmode={darkmode} />
+        <TopCompanies
+          sliderData={homeSlider}
+          title="Trusted by Top Companies"
+        />
+        <WhyUs />
+        <ProjectSirius />
+        <TestimonialSlider />
+        <ProjectsSection />
+        <FaqSection questionData={homepageAccordionData} />
+      </motion.div>
+    </>
   );
 };
 

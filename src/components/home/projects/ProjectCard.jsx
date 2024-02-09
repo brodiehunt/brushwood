@@ -1,6 +1,7 @@
 import styles from "./projectCard.module.css";
 import ButtonLink from "../../shared/buttonLink/ButtonLink";
 
+// Project card component - projects section - home page
 const ProjectCard = ({ project }) => {
   return (
     <article className={styles.projectCard}>

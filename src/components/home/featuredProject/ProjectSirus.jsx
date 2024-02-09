@@ -2,6 +2,8 @@ import styles from "./projectSirius.module.css";
 import siriusImg from "../../../assets/home/featured_project_serius.webp";
 import ButtonLink from "../../shared/buttonLink/ButtonLink";
 import { IoIosArrowForward } from "react-icons/io";
+
+// Project sirius component - home page
 const ProjectSirius = () => {
   return (
     <section className={styles.siriusSection}>

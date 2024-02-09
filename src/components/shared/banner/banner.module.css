@@ -1,8 +1,6 @@
 .bannerSection {
-  /* border-radius: var(--border-radius-lrg); */
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
   box-shadow: var(--shadow-mid);
-  /* margin: 5rem 1rem; */
   aspect-ratio: 500/300;
   overflow: hidden;
   position: relative;
@@ -34,16 +32,13 @@
 
 @media (min-width: 1444px) {
   .bannerSection {
-    /* max-width: calc(1444px - 3rem); */
     max-width: 1444px;
-
     margin-bottom: var(--section-mg-bottom);
   }
 }
 
 @media (min-width: 1500px) {
   .bannerSection {
-    /* max-width: 1444px; */
     margin: 10rem auto;
   }
 }

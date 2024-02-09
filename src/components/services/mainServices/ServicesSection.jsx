@@ -1,9 +1,10 @@
 import styles from "./servicesSection.module.css";
 import ServiceCard from "./ServiceCard";
 import { servicesCards } from "../../data/servicesData";
-import { motion, useScroll } from "framer-motion";
+import { useScroll } from "framer-motion";
 import { useRef } from "react";
 
+// Serivces page - services section
 const ServicesSection = () => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({

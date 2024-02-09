@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./faqAccordion.module.css";
 import { FaPlus } from "react-icons/fa6";
 
+// Faq accordian component - reusable
 const FaqAccordion = ({ questionData }) => {
   const [activeIndex, setActiveIndex] = useState(false);
 

@@ -1,5 +1,7 @@
 import styles from "./stillHaveQuestions.module.css";
 import ButtonLink from "../buttonLink/ButtonLink";
+
+// Still have questions component - faq section - reusable
 const StillHaveQuestions = ({}) => {
   return (
     <div className={styles.container}>

@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { useState, useRef } from "react";
 import { validateContact } from "../../../util/formValidation";
 
+// Contact form component - contact page
 const ContactForm = () => {
   const initialData = { name: "", email: "", phone: "", message: "" };
   const [formData, setFormData] = useState(initialData);
@@ -18,11 +19,13 @@ const ContactForm = () => {
   };
   const feedbackRef = useRef(null);
 
+  // Input change handler
   const handleChange = (event) => {
     const { value, name } = event.target;
     setFormData({ ...formData, [name]: value });
   };
 
+  // input blur validation handler
   const handleBlur = (event) => {
     const { name, value } = event.target;
     setFormErrors({
@@ -31,6 +34,7 @@ const ContactForm = () => {
     });
   };
 
+  // Form submit handler
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -41,6 +45,7 @@ const ContactForm = () => {
       return newErrorsObj[key];
     });
 
+    // If an error exists, set errors and focus first error element
     if (firstError) {
       setFormErrors(newErrorsObj);
       formRefs[firstError].current.focus();
@@ -56,7 +61,6 @@ const ContactForm = () => {
         event.target,
         "8scBSGTjTzlTDa_Df"
       );
-      console.log("success");
       setSubmitSuccess(true);
       setSubmitError(false);
       setFormData(initialData);
@@ -65,9 +69,9 @@ const ContactForm = () => {
       setSubmitError(true);
       setSubmitSuccess(false);
     } finally {
+      // Scroll to feedback message
       feedbackRef.current.scrollIntoView(true);
       setIsLoading(false);
-      console.log("has resolved");
     }
   };
   return (

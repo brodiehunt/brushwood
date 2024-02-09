@@ -99,6 +99,8 @@ export const navButtonVariants = {
   },
 };
 
+// Page transition animation
+
 export const pageAnimate = {
   initial: {
     opacity: 0,
@@ -110,10 +112,80 @@ export const pageAnimate = {
       ease: [0.76, 0, 0.24, 1],
     },
   },
-  // hello: {
-  //   opacity: 0,
-  //   transition: {
-  //     duration: 3,
-  //   },
-  // },
+};
+
+// Process card animations - about page
+
+export const processCardAnim = {
+  initial: {
+    x: 300,
+    opacity: 0,
+  },
+  enter: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      ease: [0.76, 0, 0.24, 1],
+    },
+  },
+};
+
+export const processCardIconAnim = {
+  initial: {
+    scale: 0,
+    opacity: 0,
+  },
+  animate: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
+// Testimonial slider animations - home page
+export const oldCenterAnim = {
+  initial: {
+    x: 600,
+    opacity: 1,
+    scaleY: 1.2,
+  },
+  animate: {
+    x: 0,
+    scaleY: 1,
+    opacity: 0.7,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
+export const newCenterAnim = {
+  initial: {
+    x: 600,
+    scaleY: 1,
+    opacity: 0.7,
+  },
+  animate: {
+    x: 0,
+    scaleY: 1.2,
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
+
+export const regularAnim = {
+  initial: {
+    x: 600,
+    opacity: 0.7,
+  },
+  animate: {
+    x: 0,
+    transition: {
+      duration: 0.8,
+    },
+  },
 };

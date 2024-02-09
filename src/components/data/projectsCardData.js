@@ -181,3 +181,38 @@ export const projectCards = [
     logoAlt: "Chadstone fashion capital Logo",
   },
 ];
+
+export const projectCardsHomepage = [
+  {
+    img: fifaWomens,
+    alt: "Fifa womens display",
+    title: "FIFA Women's Museum",
+    description: "Celebrating sports history with structural finesse",
+    features: ["Temporary Structures", "<$1M", "Sydney"],
+    href: "/projects",
+  },
+  {
+    img: kiaImg,
+    alt: "kia display at vivid, Sydney",
+    title: "KIA Vivid 2023",
+    description: "Illuminating events with creative engineering solutions",
+    features: ["Temporary Structures", "<$1M", "Sydney"],
+    href: "/projects",
+  },
+  {
+    img: dior,
+    alt: "DIOR 30 Montaigne Sydney Pop Up",
+    title: "DIOR 30 Montaigne Sydney Pop Up",
+    description: "Celebrating sports history with structural finesse",
+    features: ["Temporary Structures", "<$1M", "Sydney"],
+    href: "/projects",
+  },
+  {
+    img: capitalFoodMarket,
+    alt: "capital food market project image",
+    title: "Capital Food Market",
+    description: "Revitalizing retail spaces with sustainable design",
+    features: ["Facade Engineering", "$80M", "Sydney"],
+    href: "/projects",
+  },
+];

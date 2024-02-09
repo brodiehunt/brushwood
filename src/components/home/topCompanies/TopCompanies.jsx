@@ -1,5 +1,6 @@
 import styles from "./topCompanies.module.css";
 
+// Top companies section - home page
 const TopCompanies = ({ sliderData, title }) => {
   return (
     <section className={styles.relativeBox}>
